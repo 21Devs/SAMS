@@ -53,11 +53,11 @@ html, body{
 	text-align:center;
 	font-family: 'Fira Sans', sans-serif;
 }
-li.nav-item{
+li.nav-items{
 	height: 90px;
 	border: 1px solid #F2F2F2;
 }
-a.nav-link{
+a.nav-links{
 	height: 90px;
 	border:none;
 	color: #272727;
