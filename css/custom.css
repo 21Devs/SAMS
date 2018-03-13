@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css?family=Karma:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,800,900');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+html, body{
+	font-family: 'Fira Sans','Karma' sans-serif , serif !important;
+	color:#272727;
+}
+.font_color{
+	color: #272727;
+}
+.sec_bg-color{
+	background: #EFF1F3;
+}
+.sec_color{
+	color:#696773;
+}
+.pry_color{
+	color:#25A1D2;
+}
+.white-text{
+	color: #FFF;
+}
+.mt-112{
+	margin-top:6.2rem;
+}
+.bg_img{
+	background-image:url();
+}
+.banner_bg-color{
+	background:#0B2D40;
+}
+.white-text{
+	color: #FFF;
+}
+.banner_img{
+	height: 268px;
+	width:100%;
+	background-image: url("../Assets/img/Background/sams-bg@0.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-color:#0B2D40;
+	background-size: cover;
+}
+.banner_img h2{
+	font-size:48px;
+	color: #FFFFFF;
+	padding-top:76px;
+	text-align:center;
+	font-family: 'Fira Sans', sans-serif;
+}
+li.nav-item{
+	height: 90px;
+	border: 1px solid #F2F2F2;
+}
+a.nav-link{
+	height: 90px;
+	border:none;
+	color: #272727;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: light;
+	font-size: 24px;
+	line-height: 29px;
+	padding: 30px 0;
+
+}
+.nav-tabs .nav-link.active{
+	color:#272727;
+	border-color:#F2F2F2;
+	border-bottom:3px solid #219653;
+}
+.content_wrapper{
+	overflow: hidden;
+}
+
+ul.use_case{
+	padding: 30px 0;
+	border: 1px solid #F2F2F2;
+	box-sizing: border-box;
+}
+ul.use_case li{
+	list-style-type:none;
+	font-size: 18px;
+	line-height: 22px;
+	margin: 0 0 27px 31px;
+}
+.borderless .list-group-item {
+    border: none;
+}
+.list-style-none{
+	list-style-type: none;
+}
+li.nav-header p{
+	font-size:36px;
+	font-family: 'Fira Sans';
+}
+.borderless .list-group-item{
+	list-style-type:decimal;
+	color: #4F4F4F;
+}
+ol.list-group{
+	font-family: 'Fira Sans';
+	padding-left: 5em;
+	color: #4F4F4F;
+	font-size: 20px;
+	line-height: 24px;
+}
+ol.list-group li{
+	padding-bottom: 30px;
+	font-size:20px;
+}
+.newsletter{
+	margin-top:7rem;
+}
+.newsletter{
+	font-family: 'Fira Sans';
+	background: #0B2D40;
+	height: 220px;
+	padding-left: 102px;
+	padding-right: 102px;
+	overflow: hidden;
+	
+}
+p.big_heading{
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	font-size: 40px;
+	color: #FAFAFA;
+}
+.small_heading{
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	font-size: 20px;
+	color: #FAFAFA;
+}
+
+.pt-64{
+	padding-top:64px;
+}
+
+.subscribe_input{
+	font-family: 'Fira Sans';
+	width: 400px;
+	height: 53px;
+	font-size: 24px;
+	padding: 12px 34px;
+	margin-top: 24px;
+}
+button.btn_subscribe{
+	font-family: 'Fira Sans';
+	width: 150px;
+	height: 53px;
+	background: #219653;
+	display: inline-block;
+	color: #fff;
+	font-weight: 500;
+	border:1px solid #219653;
+	font-size: 24px;
+	margin-left: -4px;
+	border-radius: 0px;
+	margin-top:-8px;
+}
+/*media queries*/
+@media (max-width:400px){
+	.banner_img, .content_wrapper{
+		width:430px;
+	}
+	li.nav-header p{
+		padding: 0 15px;
+		font-size:30px;
+	}
+	ol.list-group{
+		padding-left: 3em;
+		font-size: 
+	}
+	.newsletter{
+		height: 440px;
+		padding-left:50px;
+		padding-right: 50px;
+	}
+	p.big_heading{
+		font-size: 30px;
+	}
+	.small_heading{
+		font-size:16px;
+	}
+	.subscribe_input{
+		width: 320px;
+		border:1px solid #fff;
+		margin-bottom: 10px;
+	}
+	button.btn_subscribe{
+		font-size:20px;
+	}
+}
+@media(min-width:410px)and (max-width:575px){
+	li.nav-header p{
+		font-size: 30px;
+		padding: 0 15px;
+	}
+	ol.list-group{
+		padding-left:3em;
+	}
+	ol.list-group li{
+		font-size:15px;
+		padding-bottom: 20px;
+	}
+	.newsletter{
+		padding-left: 50px;
+		padding-right:50px;
+		height: 440px;
+	}
+	p.big_heading{
+		font-size: 30px;
+	}
+	.small_heading{
+		font-size: 14px;
+	}
+	.subscribe_input{
+		width:320px;
+		margin-bottom: 10px;
+		border: 1px solid #fff;
+		font-size: 18px;
+	}
+	button.btn_subscribe{
+		font-size: 20px;
+	}
+}
+@media(min-width:576px) and (max-width:768px){
+	li.nav-header p{
+		font-size: 30px;
+	}
+	ol.list-group{
+		padding-left: 3em;
+	}
+	.newsletter{
+		padding-left: 50px;
+		padding-right: 50px;
+		height: 300px;
+	}
+	.subscribe_input{
+		width: 320px;
+    	border: 1px solid #fff;
+    	margin-bottom: 10px;
+
+	}
+	button.btn_subscribe{
+		
+	}
+}
+@media(min-width: 1024px){
+	.subscribe_input{
+		margin-bottom: 10px;
+		border: 1px solid #fff;
+	}
+}
