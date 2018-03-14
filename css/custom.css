@@ -508,6 +508,10 @@ footer{
 	button.btn_subscribe{
 		margin-top:-8px !important;
 	}
+	.no_account{
+		margin-top:2rem;
+		margin-bottom: 1em;
+	}
 }
 @media(min-width: 768px) and (max-width:1024px){
 	button.btn_subscribe{
@@ -550,6 +554,10 @@ footer{
 	ul.price_benefits li{
 		font-size: 14px;
 	}
+	.no_account{
+		margin-top:2rem;
+		margin-bottom: 1em;
+	}
 }
 
 
@@ -589,6 +597,10 @@ footer{
 	}
 	.signup_btn {
 		margin-bottom: 10px;
+	}
+	.no_account{
+		margin-top:2rem;
+		margin-bottom: 1em;
 	}
 	
 }
@@ -683,6 +695,10 @@ footer{
 		margin-top:3em !important;
 		text-align: center !important;
 	}
+	.no_account{
+		margin-top:24rem;
+		margin-bottom: 1em;
+	}
 }
 
 @media (max-width:400px){
@@ -745,6 +761,7 @@ footer{
 	.price_card.middle{
 		margin-top:0;
 	}
+	/*login*/
 	.form_card{
 		width: 100%;
 		margin-top:2em;
@@ -788,6 +805,10 @@ footer{
 	.privacy_terms{
 		margin-top:3em !important;
 		text-align: center !important;
+	}
+	.no_account{
+		margin-top:24rem;
+		margin-bottom: 1em;
 	}
 
 }
