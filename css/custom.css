@@ -31,12 +31,19 @@ html, body{
 .red_color{
 	color: #EB5757;
 }
+.bg_dark-grey{
+	background: #BDBDBD;
+}
 .green_color{
 	color:#219653;
 }
 .grey_text{
 	color: #828282;
 }
+.light_grey{
+	color: #BDBDBD;
+}
+
 .white-text{
 	color: #FFF;
 }
@@ -44,6 +51,9 @@ html, body{
 	margin-top:6.2rem;
 }
 /*font size*/
+.f-14{
+	font-size: 14px;
+}
 .f-16{
 	font-size:16px;
 }
@@ -53,11 +63,21 @@ html, body{
 .f-24{
 	font-size:24px;
 }
+.f-36{
+	font-size: 36px;
+}
+.f-48{
+	font-size: 48px;
+}
 .f-60{
 	font-size: 60px;
 }
+/*Others*/
 .t-15{
 	top:-1.5em
+}
+.p-60{
+	padding: 60px;
 }
 .usecase_nav{
 	border:1px solid #f2f2f2;
@@ -344,6 +364,142 @@ button.btn_subscribe{
 .bd_blue{
 	border: 1px solid #0B2D40;;
 }
+/*login*/
+.login_container{
+	height: 685px;
+}
+.big_title{
+	margin-top: 200px;
+	color: #828282;
+}
+.form_card{
+	width: 493px;
+	height: 781px;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+	margin-top:-5em;
+	padding-top: 84px;
+}
+.hr{
+    width: 50px;
+    border: 3px solid #219653;
+    margin: auto 8em;
+    margin-bottom: 20px;
+}
+.h-47{
+	height: 47px;
+	background: #FAFAFA;
+	border: 1px solid #FAFAFA;
+}
+.green-caret{
+    caret-color: #219653;
+}
+.signup_btn{
+	width: 175px;
+	height: 47px;
+	left: 181px;
+	background: #219653;
+	color:#FFF;
+	border-radius: 0;
+	padding-top: 10px;
+    font-size: 18px;
+
+}
+.signup_btn:hover{
+	color:#fff;
+}
+.login_btn:hover{
+	color:#219653;
+}
+.login_btn{
+	width: 175px;
+	height: 47px;
+	background: #FFFFFF;
+	border: 1px solid #219653;
+	box-sizing: border-box;
+	color:#219653;
+	border-radius: 0;
+	padding-top: 10px;
+    font-size: 18px;
+
+}
+/*check box styling*/
+.control {
+	font-family: 'Fira Sans';
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border: 0px solid #000000;
+}
+.control-radio .control_indicator {
+    border-radius: undefined%;
+}
+        
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #cccccc;
+}
+        
+.control input:checked ~ .control_indicator {
+    background: #219653;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #0e6647d;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+/*.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}*/
+.captcha{
+	height: 93px;
+	background: #FAFAFA;
+	border-radius: 3px;
+
+}
+.privacy_terms{
+	font-size: 12px;
+}
+
+/*footer*/
 footer{
 	font-family: 'Fira Sans';
 }
@@ -431,6 +587,9 @@ footer{
 	ul.price_benefits li{
 		font-size: 14px;
 	}
+	.signup_btn {
+		margin-bottom: 10px;
+	}
 	
 }
 
@@ -479,12 +638,58 @@ footer{
 	.price_card.middle{
 		margin-top:0;
 	}
+	/*login*/
+	.form_card{
+		width: 100%;
+		margin-top:2em;
+		padding-top:20px;
+		height: 581px;
+	}
+	.big_title{
+	    margin-top: 20px;
+	    word-wrap: normal;
+	    font-size: 40px;
+	    margin: 20px 15px;	
+	    padding-left: 0px !important;
+	}
+	.small_text{
+		padding: 0 15px;
+		padding-left:20px !important;
+	}
+	.signup_btn {
+		margin-bottom: 10px;
+	}
+	.hr{
+	    margin: 20px 2em;
+	}
+	.login_form{
+		padding:20px;
+	}
+	.control {
+		display: block;
+		margin:10px 0;
+	}
+	.forgot_password{
+		float:left;
+	}
+	.captcha > .checkbox> .control{
+		display: inline;
+	}
+
+	.captcha_img{
+		margin-top:-5px;
+	}
+	.privacy_terms{
+		margin-top:3em !important;
+		text-align: center !important;
+	}
 }
 
 @media (max-width:400px){
 	a.nav-link{
 		font-size:22px;
 	}
+
 	li.nav-header p{
 		padding: 0 15px;
 		font-size:18px;
@@ -540,4 +745,49 @@ footer{
 	.price_card.middle{
 		margin-top:0;
 	}
+	.form_card{
+		width: 100%;
+		margin-top:2em;
+		padding-top:20px;
+		height: 581px;
+	}
+	.big_title{
+	    margin-top: 20px;
+	    word-wrap: normal;
+	    font-size: 40px;
+	    margin: 20px 15px;	
+	    padding-left: 0px !important;
+	}
+	.small_text{
+		padding: 0 15px;
+		padding-left:20px !important;
+	}
+	.signup_btn {
+		margin-bottom: 10px;
+	}
+	.hr{
+	    margin: 20px 2em;
+	}
+	.login_form{
+		padding:20px;
+	}
+	.control {
+		display: block;
+		margin:10px 0;
+	}
+	.forgot_password{
+		float:left;
+	}
+	.captcha > .checkbox> .control{
+		display: inline;
+	}
+
+	.captcha_img{
+		margin-top:-5px;
+	}
+	.privacy_terms{
+		margin-top:3em !important;
+		text-align: center !important;
+	}
+
 }
