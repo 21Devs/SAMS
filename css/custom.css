@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 }
 html, body{
-	font-family: 'Fira Sans','Karma' sans-serif , serif !important;
+	font-family: 'Fira Sans','Karma', sans-serif , serif !important;
 	color:#272727;
 }
 .font_color{
@@ -16,11 +16,26 @@ html, body{
 .sec_bg-color{
 	background: #EFF1F3;
 }
+.blue_color{
+	color:#0B2D40;
+}
+.bb_black{
+	color:#4F4F4F;
+}
 .sec_color{
 	color:#696773;
 }
 .pry_color{
 	color:#25A1D2;
+}
+.red_color{
+	color: #EB5757;
+}
+.green_color{
+	color:#219653;
+}
+.grey_text{
+	color: #828282;
 }
 .white-text{
 	color: #FFF;
@@ -29,10 +44,21 @@ html, body{
 	margin-top:6.2rem;
 }
 /*font size*/
+.f-16{
+	font-size:16px;
+}
+.f-18{
+	font-size:18px;
+}
 .f-24{
 	font-size:24px;
 }
-
+.f-60{
+	font-size: 60px;
+}
+.t-15{
+	top:-1.5em
+}
 .usecase_nav{
 	border:1px solid #f2f2f2;
 	height:90px;
@@ -86,11 +112,6 @@ a.nav-links{
 	line-height: 29px;
 	padding: 30px 0;
 
-}
-.nav-tabs .nav-link.active{
-	color:#272727;
-	border-color:#F2F2F2;
-	border-bottom:3px solid #219653;
 }
 .content_wrapper{
 	overflow: hidden;
@@ -184,9 +205,69 @@ p.big_heading{
     color:#219653;
     border: none;
 }
+.price_card{
+   	width: 100%;
+    background: #fff;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	
+}
+.price_card.single{
+	height: 608px;
+	border-top:3px solid #EB5757;
+	margin-left: 5em;
+    text-align: center;
+}
+
+.price_card.middle{
+	height: 665px;
+	border-top:3px solid #219653;
+	text-align: center;
+}
+.price_card.last{
+	height: 608px;
+	border-top: 3px solid #0B2D40;
+	text-align: center;
+	margin-left: -5em;
+}
+.price_header{
+	margin-top:90px;
+}
+.price_header p{
+	line-height: normal;
+	font-size: 24px;
+	color: #828282;
+}
+.price_benefits{
+	padding-left:5rem;
+	padding-right: 5rem;
+	margin-top: 2.7rem;
+}
+ul.price_benefits li{
+	list-style-type:disc;
+	font-size: 18px;
+	color:#828282;
+	padding-bottom: 10px;
+	text-align: left;
+}
+.btn.select_price{
+	width: 206px;
+	height: 40px;
+	background: #219653;
+	box-shadow: 0px -1px 6px rgba(0, 0, 0, 0.25);
+	border-radius: 3px;
+	color: #fff;
+	font-size:18px;
+	font-family: 'Karma';
+	padding: 15px 0 35px;
+}
 #accordion{
 	font-family: 'Fira Sans';
 	margin-bottom: 6.2rem;
+}
+.z-100{
+	z-index:100;
 }
 .card-body{
 	font-family: 'Karma';
@@ -237,6 +318,30 @@ button.btn_subscribe{
 	border-radius: 0px;
 	margin-top:10px;
 }
+.price_heading{
+	font-family: 'Fira Sans';
+	text-align: center;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	font-size: 48px;
+	color: #0B2D40;
+}
+.address{
+	color: rgba(11, 45, 64, 0.83);
+}
+.card.distributor{
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+.pagination_wrapper{
+	width:284px;
+	margin: auto;
+	margin-top: 6.2rem;
+	margin-bottom: 6.2rem;
+}
+.bd_blue{
+	border: 1px solid #0B2D40;;
+}
 footer{
 	font-family: 'Fira Sans';
 }
@@ -271,6 +376,22 @@ footer{
 		margin-bottom: 10px;
 		border: 1px solid #fff;
 	}
+	.price_card.single{
+		margin-left: 2em;
+	}
+	.price_card.last{
+		margin-left: -2em;
+	}
+	.price_header p{
+		font-size: 20px;
+	}
+	.price_benefits{
+		padding-left:4rem;
+		padding-right:2rem;
+	}
+	ul.price_benefits li{
+		font-size: 14px;
+	}
 }
 
 
@@ -291,7 +412,22 @@ footer{
 		width: 320px;
     	border: 1px solid #fff;
     	margin-bottom: 10px;
-
+	}
+	.price_card.single{
+		margin-left: 2em;
+	}
+	.price_card.last{
+		margin-left: -2em;
+	}
+	.price_header p{
+		font-size: 20px;
+	}
+	.price_benefits{
+		padding-left:3em;
+		padding-right:2rem;
+	}
+	ul.price_benefits li{
+		font-size: 14px;
 	}
 	
 }
@@ -328,6 +464,15 @@ footer{
 	button.btn_subscribe{
 		font-size: 20px;
 		margin-left:1px;
+	}
+	.price_card.single, .price_card.last{
+		margin-left: 0;	
+	}
+	.price_card{
+		margin-bottom: 20px;
+	}
+	.card.distributor{
+		margin-bottom: 2em;
 	}
 }
 
@@ -371,10 +516,17 @@ footer{
 	.mt-112{
 		margin-top:4.2rem;
 	}
+
 	.accordion_heading{
 		font-size:24px;
 	}
 	.accordion_body{
 		font-size:16px;
+	}
+	.price_card.single, .price_card.last{
+		margin-left: 0;
+	}
+	.card.distributor{
+		margin-bottom: 2em;
 	}
 }
