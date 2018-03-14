@@ -224,6 +224,7 @@ p.big_heading{
 	height: 665px;
 	border-top:3px solid #219653;
 	text-align: center;
+	margin-top:-30px;
 }
 .price_card.last{
 	height: 608px;
@@ -261,6 +262,7 @@ ul.price_benefits li{
 	font-size:18px;
 	font-family: 'Karma';
 	padding: 15px 0 35px;
+	margin-top:70px;
 }
 #accordion{
 	font-family: 'Fira Sans';
@@ -474,6 +476,9 @@ footer{
 	.card.distributor{
 		margin-bottom: 2em;
 	}
+	.price_card.middle{
+		margin-top:0;
+	}
 }
 
 @media (max-width:400px){
@@ -531,5 +536,8 @@ footer{
 	}
 	.price_card{
 		margin-bottom: 2em;
+	}
+	.price_card.middle{
+		margin-top:0;
 	}
 }
