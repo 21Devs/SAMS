@@ -240,8 +240,8 @@ p.big_heading{
 	color: #828282;
 }
 .price_benefits{
-	padding-left:5rem;
-	padding-right: 5rem;
+	padding-left:7rem;
+	padding-right: 4rem;
 	margin-top: 2.7rem;
 }
 ul.price_benefits li{
@@ -527,6 +527,9 @@ footer{
 		margin-left: 0;
 	}
 	.card.distributor{
+		margin-bottom: 2em;
+	}
+	.price_card{
 		margin-bottom: 2em;
 	}
 }
