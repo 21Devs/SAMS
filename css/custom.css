@@ -28,6 +28,25 @@ html, body{
 .mt-112{
 	margin-top:6.2rem;
 }
+/*font size*/
+.f-24{
+	font-size:24px;
+}
+
+.usecase_nav{
+	border:1px solid #f2f2f2;
+	height:90px;
+	color:#272727;
+	padding:30px;
+}
+.usecase_nav > a:hover{
+	color:#272727;
+}
+
+.bd-b-green{
+	border-bottom:3px solid #219653;
+}
+
 .bg_img{
 	background-image:url();
 }
@@ -143,7 +162,59 @@ p.big_heading{
 .pt-64{
 	padding-top:64px;
 }
-
+.search_input{
+	width:100%;
+	border:none;
+	height: 53px;
+	border-bottom: 3px solid #219653;
+	padding:0 10px;
+	font-size:18px;
+	font-family: 'Fira Sans';
+	color: #0B2D40;
+}
+.search_input:focus{
+	border:none;
+	border-bottom: 3px solid #219653;
+}
+.search_btn{
+	position: relative;
+    margin-left: -39px;
+    margin-top: 10px;
+    background: #fff;
+    color:#219653;
+    border: none;
+}
+#accordion{
+	font-family: 'Fira Sans';
+	margin-bottom: 6.2rem;
+}
+.card-body{
+	font-family: 'Karma';
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 18px;
+}
+.accordion_heading{
+	font-size: 32px;
+	font-family: 'Fira Sans';
+	line-height: normal;	
+}
+.card-header{
+	height: 90px;
+}
+.fa.fa-plus-square{
+	font-size: 30px;
+	color:#219653;
+}
+.card-header{
+	background: #fff;
+	border:none;
+}
+.card{
+	border:none;
+	border-bottom: 2px solid rgba(105, 103, 115, 0.15);
+}
 .subscribe_input{
 	font-family: 'Fira Sans';
 	width: 400px;
@@ -261,16 +332,22 @@ footer{
 }
 
 @media (max-width:400px){
-	.banner_img, .content_wrapper{
-		width:430px;
+	a.nav-link{
+		font-size:22px;
 	}
 	li.nav-header p{
 		padding: 0 15px;
-		font-size:30px;
+		font-size:18px;
 	}
 	ol.list-group{
 		padding-left: 3em;
-		font-size: 
+		font-size:;
+	}
+	ul.use_case li{
+		font-size:18px;
+	}
+	ol.list-group li{
+		font-size:15px;
 	}
 	.newsletter{
 		height: 440px;
@@ -290,5 +367,14 @@ footer{
 	}
 	button.btn_subscribe{
 		font-size:20px;
+	}
+	.mt-112{
+		margin-top:4.2rem;
+	}
+	.accordion_heading{
+		font-size:24px;
+	}
+	.accordion_body{
+		font-size:16px;
 	}
 }
