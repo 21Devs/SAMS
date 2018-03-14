@@ -498,6 +498,13 @@ button.btn_subscribe{
 .privacy_terms{
 	font-size: 12px;
 }
+.login_btn_2 {
+	width: 232px;
+	height: 47px;
+	background: #219653;
+	border-radius: 3px;
+	color: #fff;
+}
 
 /*footer*/
 footer{
@@ -509,7 +516,7 @@ footer{
 		margin-top:-8px !important;
 	}
 	.no_account{
-		margin-top:2rem;
+		margin-top:4rem;
 		margin-bottom: 1em;
 	}
 }
@@ -555,7 +562,7 @@ footer{
 		font-size: 14px;
 	}
 	.no_account{
-		margin-top:2rem;
+		margin-top:3rem;
 		margin-bottom: 1em;
 	}
 }
@@ -599,7 +606,7 @@ footer{
 		margin-bottom: 10px;
 	}
 	.no_account{
-		margin-top:2rem;
+		margin-top:4rem;
 		margin-bottom: 1em;
 	}
 	
@@ -655,7 +662,7 @@ footer{
 		width: 100%;
 		margin-top:2em;
 		padding-top:20px;
-		height: 581px;
+		height: 700px;
 	}
 	.big_title{
 	    margin-top: 20px;
@@ -696,7 +703,7 @@ footer{
 		text-align: center !important;
 	}
 	.no_account{
-		margin-top:24rem;
+		margin-top:31rem;
 		margin-bottom: 1em;
 	}
 }
@@ -766,7 +773,7 @@ footer{
 		width: 100%;
 		margin-top:2em;
 		padding-top:20px;
-		height: 581px;
+		height: 700px;
 	}
 	.big_title{
 	    margin-top: 20px;
@@ -807,7 +814,7 @@ footer{
 		text-align: center !important;
 	}
 	.no_account{
-		margin-top:24rem;
+		margin-top:31rem;
 		margin-bottom: 1em;
 	}
 
