@@ -4,20 +4,16 @@
 	<!-- meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>SAMS -Log In</title>
+	<title>SAMS -Sign Up</title>
 
 	<!-- favicon -->
 	<link rel="icon" href="img/logo-fav.png" sizes="16x16" type="image/png">
 	<!-- Bootstrap & Fontawesome CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<!-- External CSS -->
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
-
-  
+	<link rel="stylesheet" href="Assets/plugins/jquery-ui/jquery-ui.min.css">
+  	<link rel="stylesheet" href="css/header.css">
+  	<link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="bg_dark-grey">
 	
@@ -100,7 +96,7 @@
 								<div class="form_card">
 									<div class="title">
 										<hr class="hr">
-										<p class="med_text text-center f-36 blue_color">Welcome Back </p>
+										<p class="med_text text-center f-36 blue_color">Hello, Good to Have You</p>
 										<p class="text-center light_grey f-14">Let us help you manage your company</p>
 									</div>
 									<div class="form-group login_form p-60">
@@ -109,41 +105,31 @@
 											<br>
 											<input type="text" class="form-control h-47 green-caret" required="">
 											<div class="form-group mt-4">
-												<label for="">Password</label>
+												<label for="Country">Country Code</label>
 												<br>
-												<input type="password" class="form-control h-47 green caret" required="">
+												<label for="country"></label>
+												<select name="country" id="country_code">
+													
+													<option value="mypodcast" data-class="fr">France</option>
+									      			<option value="myvideo" data-class="can">Canada</option>
+									      			<option value="myrss" data-class="nig">Nigeria</option>
+												</select>
 											</div>
 											<div class="form-group">
 												<div class="checkbox">
 													<label class="control control-checkbox green_color">
-											            Remember Me
+											            I agree to terms and conditions 
 											            <input type="checkbox" checked="checked" />
 											            <div class="control_indicator"></div>
 											        </label>
-													<a href="#" class="pull-right green_color forgot_password">Forgot Password ?</a>
+													
 												</div>
 											</div>
-											<div class="form-group mt-5 captcha px-3 pt-4">
-												<div class="checkbox">
-													<label class="control control-checkbox mt-2">
-											            I am not a robot
-											            <input type="checkbox"  />
-											            <div class="control_indicator"></div>
-											        </label>
-													<img src="Assets/img/captcha.png" class="captcha_img pull-right img-fluid" alt="captcha">
-
-												</div>
-												<div class="privacy_terms text-right mt-3">
-													<span>
-														<a href="" class="font_color">Privacy</a>
-													</span>
-													<span><a href="" class="font_color">Terms</a></span>
-												</div>
+												
 												<div class="buttons text-center mt-5">
-													<button class="btn login_btn_2">Log In</button>
+													<button class="btn login_btn_2">Sign Up</button>
 												</div>
 												
-											</div>
 										</form>
 									</div>
 								</div>
@@ -154,7 +140,7 @@
 			</div>
 			<div class="row no_account">
 				<div class="col-md-12 text-right">
-					<a href="signup.html" class="text-white ">Don't have an account yet? &nbsp; &nbsp;<strong>Sign Up</strong></a>
+					<a href="signup.html" class="text-white ">Have an account yet? &nbsp; &nbsp;<strong>Log In</strong></a>
 				</div>
 			</div>
 		</div>
@@ -167,8 +153,11 @@
 <!--JS, Popper.js, and jQuery  -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-
+<script src="Assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
 </html>
 

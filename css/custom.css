@@ -32,7 +32,7 @@ html, body{
 	color: #EB5757;
 }
 .bg_dark-grey{
-	background: #BDBDBD;
+	background: #696773;
 }
 .green_color{
 	color:#219653;
@@ -498,7 +498,41 @@ button.btn_subscribe{
 .privacy_terms{
 	font-size: 12px;
 }
-
+.login_btn_2 {
+	width: 232px;
+	height: 47px;
+	background: #219653;
+	border-radius: 3px;
+	color: #fff;
+}
+/*cusrtom select drop down*/
+ /* select with custom icons */
+    .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
+      padding: 0.5em 0 0.5em 4em;
+    }
+    .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
+      height: 50px;
+      width: 50px;
+      top: 1.2em;
+    }
+    .ui-icon.fr {
+      background: url("../Assets/img/flag.png") 0 0 no-repeat;
+    }
+    .ui-icon.can {
+      background: url("../Assets/img/flag.png") 0 0 no-repeat;
+    }
+    .ui-icon.nig {
+      background: url("../Assets/img/flag.png") 0 0 no-repeat;
+    }
+    .ui-selectmenu-button.ui-button{
+    	background: #fafafa;
+    	height: 46px;
+    	padding-top:1em;
+    	width:100%;
+    	border:1px solid #fafafa;
+    	margin-bottom: 3rem;
+    	font-family: 'Fira Sans'
+    }
 /*footer*/
 footer{
 	font-family: 'Fira Sans';
@@ -509,7 +543,7 @@ footer{
 		margin-top:-8px !important;
 	}
 	.no_account{
-		margin-top:2rem;
+		margin-top:4rem;
 		margin-bottom: 1em;
 	}
 }
@@ -555,7 +589,7 @@ footer{
 		font-size: 14px;
 	}
 	.no_account{
-		margin-top:2rem;
+		margin-top:3rem;
 		margin-bottom: 1em;
 	}
 }
@@ -599,7 +633,7 @@ footer{
 		margin-bottom: 10px;
 	}
 	.no_account{
-		margin-top:2rem;
+		margin-top:4rem;
 		margin-bottom: 1em;
 	}
 	
@@ -655,7 +689,7 @@ footer{
 		width: 100%;
 		margin-top:2em;
 		padding-top:20px;
-		height: 581px;
+		height: 700px;
 	}
 	.big_title{
 	    margin-top: 20px;
@@ -696,7 +730,7 @@ footer{
 		text-align: center !important;
 	}
 	.no_account{
-		margin-top:24rem;
+		margin-top:31rem;
 		margin-bottom: 1em;
 	}
 }
@@ -766,7 +800,7 @@ footer{
 		width: 100%;
 		margin-top:2em;
 		padding-top:20px;
-		height: 581px;
+		height: 700px;
 	}
 	.big_title{
 	    margin-top: 20px;
@@ -807,7 +841,7 @@ footer{
 		text-align: center !important;
 	}
 	.no_account{
-		margin-top:24rem;
+		margin-top:31rem;
 		margin-bottom: 1em;
 	}
 
