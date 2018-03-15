@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Selectmenu - Custom Rendering</title>
+  <link rel="stylesheet" href="jquery.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+  crossorigin="anonymous"></script>
+  <script src="slick.js"></script>
+ <!--  <script>
+    $( function() {
+      $.widget( "custom.iconselectmenu", $.ui.selectmenu, {
+        _renderItem: function( ul, item ) {
+          var li = $( "<li>" ),
+            wrapper = $( "<div>", { text: item.label } );
+   
+          if ( item.disabled ) {
+            li.addClass( "ui-state-disabled" );
+          }
+   
+          $( "<span>", {
+            style: item.element.attr( "data-style" ),
+            "class": "ui-icon " + item.element.attr( "data-class" )
+          })
+            .appendTo( wrapper );
+   
+          return li.append( wrapper ).appendTo( ul );
+        }
+      });
+   
+   
+      $( "#filesB" )
+        .iconselectmenu()
+        .iconselectmenu( "menuWidget" )
+          .addClass( "ui-menu-icons customicons" );
+   
+      
+    } );
+  </script>
+  <style>
+ 
+    /* select with custom icons */
+    .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
+      padding: 0.5em 0 0.5em 4em;
+    }
+    .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
+      height: 50px;
+      width: 50px;
+      top: 1.2em;
+    }
+    .ui-icon.video {
+      background: url("Assets/img/flag.png") 0 0 no-repeat;
+    }
+    .ui-icon.podcast {
+      background: url("Assets/img/flag.png") 0 0 no-repeat;
+    }
+    .ui-icon.rss {
+      background: url("Assets/img/flag.png") 0 0 no-repeat;
+    }
+   
+  </style> -->
+  <script>
+    $('#make-it-slick').on('click', function(){
+    $('#demo-htmlselect').ddslick();
+});
+  </script>
+</head>
+<body>
+
+ 
+<form action="#">
+
+ 
+  <h2>Selectmenu with custom icon images</h2>
+  <fieldset>
+    <label for="filesB">Select a podcast:</label>
+    <select name="filesB" id="filesB">
+      <option value="mypodcast" data-class="podcast">John Resig Podcast</option>
+      <option value="myvideo" data-class="video">Scott González Video</option>
+      <option value="myrss" data-class="rss">jQuery RSS XML</option>
+    </select>
+  </fieldset>
+  <form action="">
+
+   <select id="demo-htmlselect">
+        <option value="0" data-imagesrc="http://i.imgur.com/XkuTj3B.png"
+            data-description="Description with Facebook">Facebook</option>
+        <option value="1" data-imagesrc="http://i.imgur.com/8ScLNnk.png"
+            data-description="Description with Twitter">Twitter</option>
+        <option value="2" selected="selected" data-imagesrc="http://i.imgur.com/aDNdibj.png"
+            data-description="Description with LinkedIn">LinkedIn</option>
+        <option value="3" data-imagesrc="http://i.imgur.com/kFAk2DX.png"
+            data-description="Description with Foursquare">Foursquare</option>
+    </select>
+  </form>
+
+</form>
+
+
+  <select name="" id="">
+    <option value="nigeria"><img src="Assets/img/flag.png" alt="">Nigeria</option>
+    <option value="nigeria"><img src="Assets/img/flag.png" alt="">France</option>
+    <option value="nigeria"><img src="Assets/img/flag.png" alt="">germany</option>
+  </select>
+
+ 
+ 
+</body>
+</html>

@@ -32,7 +32,7 @@ html, body{
 	color: #EB5757;
 }
 .bg_dark-grey{
-	background: #BDBDBD;
+	background: #696773;
 }
 .green_color{
 	color:#219653;
@@ -505,7 +505,25 @@ button.btn_subscribe{
 	border-radius: 3px;
 	color: #fff;
 }
-
+/*cusrtom select drop down*/
+ /* select with custom icons */
+    .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
+      padding: 0.5em 0 0.5em 4em;
+    }
+    .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
+      height: 50px;
+      width: 50px;
+      top: 1.2em;
+    }
+    .ui-icon.video {
+      background: url("Assets/img/flag.png") 0 0 no-repeat;
+    }
+    .ui-icon.podcast {
+      background: url("Assets/img/flag.png") 0 0 no-repeat;
+    }
+    .ui-icon.rss {
+      background: url("Assets/img/flag.png") 0 0 no-repeat;
+    }
 /*footer*/
 footer{
 	font-family: 'Fira Sans';
