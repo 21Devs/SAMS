@@ -15,46 +15,31 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="Assets/plugins/jquery-ui/jquery-ui.min.css">
-    <style>
-      /* select with custom icons */
-        .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
-          padding: 0.5em 0 0.5em 4em;
-        }
-        .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
-          height: 50px;
-          width: 50px;
-          top: 1.2em;
-        }
-        .ui-icon.fr {
-          background: url("Assets/img/flag.png") 0 0 no-repeat;
-        }
-        .ui-icon.can {
-          background: url("Assets/img/flag.png") 0 0 no-repeat;
-        }
-        .ui-icon.nig {
-          background: url("Assets/img/flag.png") 0 0 no-repeat;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    
+
+   
   </head>
   <body>
-    <form action="">
-      <label for="country"></label>
-      <select name="country" id="country_code">
-        <option value="mypodcast" data-class="fr">France</option>
-            <option value="myvideo" data-class="can">Canada</option>
-            <option value="myrss" data-class="nig">Nigeria</option>
-      </select>
-    </form>
+    <select class="selectpicker">
+      <option value= "relish" data-content="<span><img src='Assets/img/flag.png' style='padding-right:10px;'>Relish</span>"></option>
+      <option value= "fr" data-content="<span><img src='Assets/img/flag.png'>france</span>"></option>
+      <option value= "can" data-content="<span><img src='Assets/img/flag.png'>can</span>"></option>
+      <option value= "res" data-content="<span><img src='Assets/img/flag.png'>russia</span>"></option>
+
+    </select>
+ 
+  
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <!-- Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="Assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-    <script>
-      
-    </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
   </body>
 </html>

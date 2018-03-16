@@ -44,11 +44,23 @@ html, body{
 	color: #BDBDBD;
 }
 
+.banner_bg-color{
+	background:#0B2D40;
+}
 .white-text{
 	color: #FFF;
 }
+.bd-b-green{
+	border-bottom:3px solid #219653;
+}
 .mt-112{
 	margin-top:6.2rem;
+}
+.pt-64{
+	padding-top:64px;
+}
+.bd-white{
+	border:1px solid #fff;
 }
 /*font size*/
 .f-14{
@@ -72,6 +84,10 @@ html, body{
 .f-60{
 	font-size: 60px;
 }
+.f-karma{
+	font-family: 'Karma'
+}
+
 /*Others*/
 .t-15{
 	top:-1.5em
@@ -79,6 +95,163 @@ html, body{
 .p-60{
 	padding: 60px;
 }
+/*Home page*/
+.form_card-small{
+	width: 493px;
+	height: 453px;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+}
+.play{
+	width: 171px;
+	height: 153px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+	position: absolute;
+	 left: 25em;
+    top: 700px;
+
+}
+.hide{
+	overflow: hidden;
+}
+.play button{
+	background: #fff;
+    border: 0;
+    width:66px;
+    height: 66px;
+    margin: 10px 3em;
+}
+.play img{
+	width:100%;
+}
+.about_img{
+	box-sizing: border-box;
+	box-shadow:-5px 0px 11px -3px #0D364D;
+}
+.app_bg{
+    background: 
+    -webkit-linear-gradient(rgba(58, 53, 53, 0.55), rgba(58, 53, 53, 0.55));
+  background: 
+    -o-linear-gradient(rgba(58, 53, 53, 0.55), rgba(35, 30, 30, 0.45));
+  background: 
+    linear-gradient(rgba(58, 53, 53, 0.55), rgba(35, 30, 30, 0.45)),      /* bottom,  */  
+    /* bottom, image */
+    url('../Assets/img/app_bg.png');
+    width:100%;
+    height: 780px;
+}
+.white_hr{
+	width: 50px;
+    border: 3px solid #fff;
+    margin: auto 0em;
+    margin-bottom: 20px;
+}
+.hr_home{
+	width: 50px;
+    border: 3px solid #219653;
+    margin: auto 0em;
+    margin-bottom: 20px;
+}
+.btn_playStore{
+	width:250px;
+	height: 80px;
+}
+.icon{
+	width: 50px;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+}
+.icon-payroll{
+	background-image: url('../Assets/img/laptop.svg');
+	width:50px;
+	height: 100%;
+	background-repeat: no-repeat;
+}
+.testimonial_bg{
+	background: 
+    -webkit-linear-gradient(rgba(11, 45, 64, 0.8), rgba(121, 153, 212, 0.55));
+  background: 
+    -o-linear-gradient(rgba(58, 53, 53, 0.55), rgba(121, 153, 212, 0.55));
+  background: 
+    linear-gradient(rgba(58, 53, 53, 0.55), rgba(35, 30, 30, 0.45)),      /* bottom,  */  
+    /* bottom, image */
+    url('../Assets/img/testimonial image.png');
+    width:100%;
+	height: 780px;
+	
+}
+.testimonial_card{
+	width: 100%;
+	height: 632px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-top:4em;
+}
+/* Bubble Slider */
+.quotes{
+	width:80%;
+	margin: auto;
+}
+.bubble blockquote {
+	margin:10px 10px 0px 60px;
+	background: #fff;
+	padding: 60px;
+	position: relative;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.25em;
+	color: #696773;
+}
+.bubble blockquote:before, .bubble blockquote:after {
+	content: "\201C";
+	position: absolute;
+	font-size: 120px;
+	padding: 10px;
+	line-height: 1;
+	color: #696773;
+}
+.bubble blockquote:before {
+	top: 0;
+	left: 10px;
+}
+.bubble blockquote:after {
+	content: "\201D";
+	right: 10px;
+	bottom: -.5em;
+}
+.hr_quote{
+	width: 50px;
+    border: 3px solid #219653;
+    margin: auto 13em;
+    margin-bottom: 20px;
+}
+.bubble div {
+	width: 0;
+	height: 0;
+	border-left: 0 solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #fff;
+	margin: 0 0 0 60px;
+	margin-bottom: 10px;
+}
+.bubble cite {
+	padding-left: 20px;
+	font-size: 1.25em;
+  	color:#f7f7f7;
+}
+
+/*
+.bg  {
+	background: linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%);
+	width:100%;
+	height:100%;
+	position:absolute;
+}*/
+
+/*Use csae*/
 .usecase_nav{
 	border:1px solid #f2f2f2;
 	height:90px;
@@ -89,19 +262,7 @@ html, body{
 	color:#272727;
 }
 
-.bd-b-green{
-	border-bottom:3px solid #219653;
-}
 
-.bg_img{
-	background-image:url();
-}
-.banner_bg-color{
-	background:#0B2D40;
-}
-.white-text{
-	color: #FFF;
-}
 .banner_img{
 	height: 268px;
 	width:100%;
@@ -111,6 +272,14 @@ html, body{
 	background-color:#0B2D40;
 	background-size: cover;
 }
+.big_banner{
+	width: 100%;
+	height: 797px;
+	background: linear-gradient(61.04deg, #0B2D40 0%, rgba(11, 45, 64, 0) 100%);
+	background-size: cover;
+	overflow: hidden;
+
+}
 .banner_img h2{
 	font-size:48px;
 	color: #FFFFFF;
@@ -118,6 +287,7 @@ html, body{
 	text-align:center;
 	font-family: 'Fira Sans', sans-serif;
 }
+
 li.nav-items{
 	height: 90px;
 	border: 1px solid #F2F2F2;
@@ -133,6 +303,7 @@ a.nav-links{
 	padding: 30px 0;
 
 }
+
 .content_wrapper{
 	overflow: hidden;
 }
@@ -173,18 +344,8 @@ ol.list-group li{
 	padding-bottom: 30px;
 	font-size:20px;
 }
-.newsletter{
-	margin-top:7rem;
-}
-.newsletter{
-	font-family: 'Fira Sans';
-	background: #0B2D40;
-	height: 220px;
-	padding-left: 102px;
-	padding-right: 102px;
-	overflow: hidden;
-	
-}
+
+/*pricing*/
 p.big_heading{
 	font-style: normal;
 	font-weight: 300;
@@ -200,9 +361,6 @@ p.big_heading{
 	color: #FAFAFA;
 }
 
-.pt-64{
-	padding-top:64px;
-}
 .search_input{
 	width:100%;
 	border:none;
@@ -284,6 +442,16 @@ ul.price_benefits li{
 	padding: 15px 0 35px;
 	margin-top:70px;
 }
+.price_heading{
+	font-family: 'Fira Sans';
+	text-align: center;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	font-size: 48px;
+	color: #0B2D40;
+}
+/*faq*/
 #accordion{
 	font-family: 'Fira Sans';
 	margin-bottom: 6.2rem;
@@ -318,37 +486,7 @@ ul.price_benefits li{
 	border:none;
 	border-bottom: 2px solid rgba(105, 103, 115, 0.15);
 }
-.subscribe_input{
-	font-family: 'Fira Sans';
-	width: 400px;
-	height: 53px;
-	font-size: 24px;
-	padding: 12px 34px;
-	margin-top: 24px;
-}
-button.btn_subscribe{
-	font-family: 'Fira Sans';
-	width: 150px;
-	height: 53px;
-	background: #219653;
-	display: inline-block;
-	color: #fff;
-	font-weight: 500;
-	border:1px solid #219653;
-	font-size: 24px;
-	margin-left: -4px;
-	border-radius: 0px;
-	margin-top:10px;
-}
-.price_heading{
-	font-family: 'Fira Sans';
-	text-align: center;
-	font-style: normal;
-	font-weight: 300;
-	line-height: normal;
-	font-size: 48px;
-	color: #0B2D40;
-}
+
 .address{
 	color: rgba(11, 45, 64, 0.83);
 }
@@ -403,7 +541,6 @@ button.btn_subscribe{
 	border-radius: 0;
 	padding-top: 10px;
     font-size: 18px;
-
 }
 .signup_btn:hover{
 	color:#fff;
