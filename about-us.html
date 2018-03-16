@@ -147,11 +147,9 @@
 				<div class="col-12 col-md-6 hero-sub-col ">
 					<!-- <img src="img/undraw_data_xmfy.svg" width="480px" class="img-fluid img-responsive float-right"> -->
 
-					<p class="display-5">Ebere Dozie</p>
-					<p class="mt-0 about-team-member " id="diff">Android Developer</p>
-					<p class="my-2 about-team-member"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+					<p class="display-5 head-tag"> Ebere Dozie</p>
+					<p class="mt-0 about-team-member skill-set " id="diff"> Android Developer</p>
+					<p class="my-2 about-team-member about-self" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
 					<header class="h4 about-team-member-2">GET IN TOUCH</header>
 					<hr class="hr-2 mb-2">
 
@@ -162,15 +160,15 @@
 
 					<div class="">
 						<div>
-							<img src="img/image 3.1.png" class="img-fluid img-responsive team-img" >
+							<img src="img/image 3.1.png" class="img-fluid img-responsive team-img" onclick="about1()">
 
-							<img src="img/image 4.1.png" class="img-fluid img-responsive team-img float-right" >
+							<img src="img/image 4.1.png" class="img-fluid img-responsive team-img float-right" onclick="about2()">
 						</div>
 
 						<div class="mt-4">
-							<img src="img/image 5.1.png" class="img-fluid img-responsive team-img">
+							<img src="img/image 5.1.png" class="img-fluid img-responsive team-img" onclick="about3()">
 							
-							<img src="img/image 6.1.png" class="img-fluid img-responsive team-img float-right">
+							<img src="img/image 6.1.png" class="img-fluid img-responsive team-img float-right" onclick="about4()">
 						</div>
 						
 					
@@ -363,12 +361,43 @@
 
 </body>
 
-
 <!--JS, Popper.js, and jQuery  -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+<script> 
+	
+	
+	function about1() {
+		document.querySelector('.head-tag').innerHTML = "Ebere Dozie";
+		document.querySelector('.skill-set').innerHTML = "Android Developer";
+		document.querySelector('.about-self').innerHTML = " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.";
+		// document.querySelector('.head-tag').innerHTML = "Ebere Dozie";
+	}
+
+	function about2() {
+		document.querySelector('.head-tag').innerHTML = "Alex Iwobi";
+		document.querySelector('.skill-set').innerHTML = "Web Developer";
+		document.querySelector('.about-self').innerHTML = " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.";
+		// document.querySelector('.head-tag').innerHTML = "Ebere Dozie";
+	}
+
+	function about3() {
+		document.querySelector('.head-tag').innerHTML = "Emre Can";
+		document.querySelector('.skill-set').innerHTML = "Designer";
+		document.querySelector('.about-self').innerHTML = " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.";
+		// document.querySelector('.head-tag').innerHTML = "Ebere Dozie";
+	}
+
+	function about4() {
+		document.querySelector('.head-tag').innerHTML = "Sadio Mane";
+		document.querySelector('.skill-set').innerHTML = "Project Manager";
+		document.querySelector('.about-self').innerHTML = " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.";
+		// document.querySelector('.head-tag').innerHTML = "Ebere Dozie";
+	}
+</script>
 
 </html>
 

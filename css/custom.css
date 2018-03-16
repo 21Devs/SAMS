@@ -90,9 +90,13 @@ html, body{
 }
 
 .bd-b-green{
-	border-bottom:3px solid #219653;
+	/*border-bottom:3px solid #219653;*/
 }
-
+.active-tab, .usecase_nav:hover {
+    /*<!--background-color: #666;-->*/
+    /*color: white;*/
+    border-bottom: 3px solid green;
+}
 .bg_img{
 	background-image:url();
 }
@@ -536,6 +540,10 @@ button.btn_subscribe{
 /*footer*/
 footer{
 	font-family: 'Fira Sans';
+}
+
+.main-nav{
+	padding: 1% 5%; 
 }
 /*media queries*/
 @media(min-width:1340px) and (max-width:1440px){
