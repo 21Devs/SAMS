@@ -263,6 +263,24 @@ html, body{
 }
 
 
+.bd-b-green{
+	/*border-bottom:3px solid #219653;*/
+}
+.active-tab, .usecase_nav:hover {
+    /*<!--background-color: #666;-->*/
+    /*color: white;*/
+    border-bottom: 3px solid green;
+}
+.bg_img{
+	background-image:url();
+}
+.banner_bg-color{
+	background:#0B2D40;
+}
+.white-text{
+	color: #FFF;
+}
+>>>>>>> master
 .banner_img{
 	height: 268px;
 	width:100%;
@@ -674,6 +692,10 @@ ul.price_benefits li{
 footer{
 	font-family: 'Fira Sans';
 }
+
+.main-nav{
+	padding: 1% 5%; 
+}
 /*media queries*/
 @media(min-width:1340px) and (max-width:1440px){
 	button.btn_subscribe{
@@ -980,6 +1002,9 @@ footer{
 	.no_account{
 		margin-top:31rem;
 		margin-bottom: 1em;
+	}
+	.banner_img-1{
+		height: 300px;
 	}
 
 }

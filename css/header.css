@@ -8,6 +8,8 @@
 }
 .fa{
 	color: #0b2d40;
+	font-size: 16px;
+	margin-top: 5px;
 }
 .search{
 	background-color: #0b2d40;
@@ -24,7 +26,7 @@
 
 .navbar-toggler{
 	/*color: white;*/
-	background-color: #fff;
+	/*background-color: #fff;*/
 }
 
 
@@ -34,19 +36,19 @@
 
 
 @media(min-width:576px) and (max-width:768px){
-	.container-fluid{
+	.header-1{
 		display: none;
 	}
 }
 
 @media(min-width:410px)and (max-width:575px){
-	.container-fluid{
+	.header-1{
 		display: none;
 	}
 }
 
 @media (max-width:400px){
-	.container-fluid{
+	.header-1{
 		display: none;
 	}
 }

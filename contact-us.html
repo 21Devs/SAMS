@@ -15,7 +15,7 @@
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 
   
 </head>
@@ -23,7 +23,7 @@
 	<!-- Start:: Header -->
 
 	<!--  header -->
-	<div class="container-fluid mb-0 pb-0">
+	<div class="container-fluid header-1 mb-0 pb-0">
 		<div class="row header-row-1">
 			<div class="col-12 col-md-4 header-col-1 mr-auto">
 				<div class="row header-col-1-row">
@@ -40,13 +40,13 @@
 			</div>
 
 			<div class="col-12 col-md-4 header-col-2 text-right py-2 pr-5">
-				<a href="#">
+				<a href="https://twitter.com/samsnigeria">
 					<i class="fa fa-twitter fa-2x mx-2"></i>
 				</a>
 				<a href="#">
 					<i class="fa fa-google fa-2x mx-2"></i>
 				</a>
-				<a href="#">
+				<a href="https://www.facebook.com/sams.attendance.9">
 					<i class="fa fa-facebook fa-2x mx-2"></i>
 				</a>
 			</div>
@@ -54,7 +54,7 @@
 	</div>
 
 	<!-- header-2 -->
-	<nav class="navbar navbar-expand-lg px-5 py-4">
+	<nav class="navbar navbar-expand-lg main-nav navbar-light">
 	  <a class="navbar-brand" href="#"><img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px"></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -69,13 +69,13 @@
 	        <a class="nav-link text-white mr-4" href="#">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link text-white mr-4" href="#">About</a>
+	        <a class="nav-link text-white mr-4" href="about-us.html">About</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link text-white mr-4" href="#">Contact</a>
+	        <a class="nav-link text-white mr-4" href="contact-us.html">Contact</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="btn nav-link text-white auth-btn bg-success px-5" href="#">Log In</a>
+	        <a class="btn nav-link text-white auth-btn bg-success px-5" href="login.html">Log In</a>
 	      </li>
 	    </ul>
 	    <form class="form-inline ">
@@ -86,144 +86,70 @@
 
 	<!-- Start:: Content -->
 	<main>
-		<div class="banner_img">
-			<h2>Use Case</h2>
+		<div class="">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.0326191682857!2d7.461071814786891!3d9.060789093498817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b19a5b9cc39%3A0x75b984352035ec9c!2s53+Mambolo+St%2C+Wuse%2C+Abuja!5e0!3m2!1sen!2sng!4v1521035559982" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
-		<section class="content_wrapper">
+
+		<div class="container-fluid contact-div">
 			<div class="row">
-				<div class="col-12">
-					<ul class="nav nav-fill f-24">
-						<li class="nav-item usecase_nav">
-						    <a class="nav-link font_color" href="faq.html">General</a>
-						</li>
-						<li class="nav-item usecase_nav">
-						    <a class="nav-link font_color" href="pricing.html">Pricing & Plans</a>
-						</li>
-						<li class="nav-item usecase_nav bd-b-green">
-						    <a class="nav-link font_color active " href="usecase.html">Use Case</a>
-						</li>
-					</ul>
+				<div class="col-12 col-md-7 ">
+					<div class="container-fluid bg-lighter contact-form">
+						<div class="contact-form-text mb-5">
+							<p class="h6">CONTACT US</p>
+							<p class="h2">Get In Touch</p>
+						</div>
+
+						<form class="form">
+						  <div class="form-row">
+						    <div class="form-group col-md-6">
+						      <input type="email" class="form-control rounded-0" id="inputEmail4" placeholder="Name*">
+						    </div>
+						    <div class="form-group col-md-6">
+						      <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Email*">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <input type="text" class="form-control rounded-0" id="inputAddress" placeholder="Message type">
+						  </div>
+						  
+						  <div class="form-row">
+						    <div class="form-group col-md-12">
+						     <!--  <input type="text" class="form-control rounded-0" id="inputCity"> -->
+
+						      <textarea class="form-control rounded-0 mb-2" id="exampleFormControlTextarea1" placeholder="Message*" rows="6"></textarea>
+						    </div>
+
+						  </div>
+						  <button type="submit" class="btn btn-success btn-send rounded-0">Send</button>
+						</form>
+					</div>
+				</div>
+
+
+				<div class="col-12 col-md-5">
+					<div class="details-div">
+						<div class="container-fluid bg-lighter text-center details-div-1 pb-1 mb-5">
+							<i class="fa fa-map-marker fa-border text-success rounded-circle"></i>
+							<p class="h5">Location</p>
+							<p class="">No 53, Mambolo Street, Wuse Zone 2,<br> Abuja, Nigeria.</p>
+						</div>
+
+						<div class="container-fluid bg-lighter text-center details-div-1 pb-3 mb-5">
+							<i class="fa fa-envelope fa-border text-success rounded-circle"></i>
+							<p class="h5">Email</p>
+							<p class="">sams@stetis.com</p>
+						</div>
+
+						<div class="container-fluid bg-lighter text-center details-div-1 pb-3">
+							<i class="fa fa-phone fa-border text-success rounded-circle"></i>
+							<p class="h5">Phone</p>
+							<p class="">+23490 5555 3302,  +23470 1555 5938</p>
+						</div>
+
+					</div>
 				</div>
 			</div>
-			
-			
-	  		<!-- Start:: USECAE Content -->
-	  		<div class="container mt-112">
-	  			<div class="row">
-	  				<div class="col-md-4">
-	  					<ul class="use_case">
-	  						<li>Schools (Tertiary, Pre-nursery) </li>
-	  						<li>Banks / Financial Institutions</li>
-	  						<li>Hospitals</li>
-	  						<li>Public Establishments</li>
-	  						<li>Franchise Stores</li>
-	  					</ul>
-	  				</div>
-	  				<div class="col-md-8">
-	  					<section>
-	  						<ul class=" borderless">
-							  	<li class="nav-header disabled list-style-none">
-							  		<p>Schools (Tertiary, Pre-nursery)</p>
-							  	</li>
-							  	<ol class="list-group">
-							  		<li>
-								    	Track staff attendance record
-								  	</li>
-									<li>
-									    Track staff availability for classes
-									</li>
-								  	<li>
-								    	Track students attendance records for classes in tertiary instituitions
-								  	</li>
-							  	</ol>
-							  	
-							</ul>
-	  					</section>
-	  					<section>
-	  						<ul class=" borderless">
-							  	<li class="nav-header disabled list-style-none">
-							  		<p>Banks And Financial Institutions</p>
-							  	</li>
-							  	<ol class="list-group">
-							  		<li>
-								    	Track staff attendance record
-								  	</li>
-									<li>
-									    Track leave cycle
-									</li>
-								  	<li>
-								    	Track break / movement
-								  	</li>
-							  	</ol>
-							  	
-							</ul>
-	  					</section>
-	  					<section>
-	  						<ul class=" borderless">
-							  	<li class="nav-header disabled list-style-none">
-							  		<p>Hospitals</p>
-							  	</li>
-							  	<ol class="list-group">
-							  		<li>
-								    	Track staff attendance record
-								  	</li>
-									<li>
-									    Track staff availability for classes
-									</li>
-								  	<li>
-								    	Track students attendance records for classes in tertiary instituitions
-								  	</li>
-							  	</ol>
-							  	
-							</ul>
-	  					</section>
-	  					<section>
-	  						<ul class=" borderless">
-							  	<li class="nav-header disabled list-style-none">
-							  		<p>Public Establishments/Institutions</p>
-							  	</li>
-							  	<ol class="list-group">
-							  		<li>
-								    	Track staff attendance record
-								  	</li>
-									<li>
-									    Track staff availability for classes
-									</li>
-								  	<li>
-								    	Track students attendance records for classes in tertiary instituitions
-								  	</li>
-							  	</ol>
-							  	
-							</ul>
-	  					</section>
-	  					<section>
-	  						<ul class=" borderless">
-							  	<li class="nav-header disabled list-style-none">
-							  		<p>Franchise Stores </p>
-							  	</li>
-							  	<ol class="list-group">
-							  		<li>
-								    	Track staff attendance record
-								  	</li>
-									<li>
-									    Track staff availability for classes
-									</li>
-								  	<li>
-								    	Track students attendance records for classes in tertiary instituitions
-								  	</li>
-							  	</ol>
-							  	
-							</ul>
-	  					</section>
-	  				</div>
-	  			</div>
-	  			
-	  		</div>		  				
-	  		<!-- END:: USECASE Content -->
-			  	
-			
-		</section>
-		
+		</div>
 	</main>
 		
 	<!-- End:: Content -->
@@ -254,7 +180,7 @@
 
 		<div class="footer-div-2 p-5 mb-3">
 			<div class="row m-2">
-				<div class="col-12 col-md-4">
+				<div class="col-12 col-md-4 footer-div-2-col-1">
 					<img src="img/logo/sams-logo-sams-color-no-text.svg" class="img-fluid img-responsive" width="100px">
 					<p class="footer-one-liner mt-4">SAMS- Maximizing employees <br> productivity and business <br> productivity</p>
 				</div>
@@ -264,13 +190,13 @@
 						<a href="#" class="links" style="text-decoration: none;">
 							<li class="mb-2">Home</li>
 						</a>
-						<a href="#" class="links" style="text-decoration: none;">
+						<a href="about-us.htnl" class="links" style="text-decoration: none;">
 							<li class="mb-2">About</li>
 						</a>
-						<a href="#" class="links" style="text-decoration: none;">
+						<a href="contact-us.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">Contact</li>
 						</a>
-						<a href="#" class="links" style="text-decoration: none;">
+						<a href="signup.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">Sign Up</li>
 						</a>
 					</ul>
@@ -278,10 +204,10 @@
 				<div class="col-6 col-md-2 pt-4">
 					<ul>
 						<header class="sams-blue mb-3 font-weight-bold">Links</header>
-						<a href="#" class="links" style="text-decoration: none;">
+						<a href="pricing.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">Pricing</li>
 						</a>
-						<a href="#" class="links" style="text-decoration: none;">
+						<a href="faq.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">FAQs</li>
 						</a>
 						<a href="#" class="links" style="text-decoration: none;">
@@ -292,7 +218,7 @@
 				<div class="col-12 col-md-4 pt-4">
 					<ul>
 						<header class="sams-blue mb-3 font-weight-bold">Contact Us</header>
-						<li class="mb-1">No 53, Mambolo Street, Wuse Zone 2, Abuja Nigeria.</li>
+						<li class="mb-1">No. 1, Adeola Adeoye Street, Off Toyin Street, Ikeja, Lagos.</li>
 						<li class="mb-0 pb-0">+234 905 555 3302</li>
 						<li class="mb-2 pt-0 mt-0">+234 701 555 5938</li>
 						<li class="mb-2">sams@stetis.com</li>
@@ -308,13 +234,13 @@
 				</div>
 
 				<div class="col-6 col-md-2 d-flex">
-					<a href="#">
+					<a href="https://twitter.com/samsnigeria">
 						<i class="fa fa-twitter text-white fa-2x mx-2"></i>
 					</a>
 					<a href="#">
 						<i class="fa fa-google text-white fa-2x mx-2"></i>
 					</a>
-					<a href="#">
+					<a href="https://www.facebook.com/sams.attendance.9">
 						<i class="fa fa-facebook text-white fa-2x mx-2"></i>
 					</a>
 				</div>
