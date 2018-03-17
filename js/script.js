@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    //testimonial carousel
     $(".testimonial-carousel").slick({
         infinite: true,
         dots: true,
@@ -10,30 +11,22 @@ $(document).ready(function() {
         prevArrow: $(".testimonial-carousel-controls .prev"),
         nextArrow: $(".testimonial-carousel-controls .next")
     });
-    /*$(function() {
-        var BV = new $.BigVideo({container: $('#video_bg')});
+    // big video background
+    // $(function() {
+    //     var BV = new $.BigVideo({container: $('#video_bg')});
 
-        BV.init();
-        BV.getPlayer().pause();
+    //     BV.init();
+    //     BV.getPlayer().pause();
 
-        BV.show('video/SAMS_Advert.mp4', {doLoop:true}, {autoplay:true});
+    //     BV.show('video/SAMS_Advert.mp4', {doLoop:true}, {autoplay:true});
 
-    });*/
-    $(".features_card").mouseover( function (e) {
-        // body...
-        console.log(e.target.value);
-        $(this).find(".feature_details").show();
-         $(this).toggleClass('flip');
-    })
-    $(".features_card").mouseleave( function (e) {
-        // body...
-        console.log(e.target.value);
-        $(this).find(".feature_details").hide();
-    })
-    // var card = document.querySelector('.features_card');
-    // function flipCard(e){
-    //     console.log(e.target);
-    //     (this).find(".feature_detaiils").show();
-    // }
-    // card.addEventListener('mouseover', flipCard);
+    // });
+    // features card toggle
+    $(".card_container").mouseover(function(){
+        $(this).find(".side_2").show ()
+    });
+    $(".card_container").mouseleave(function(){
+        $(this).find(".side_2").hide();
+    });
+
 });

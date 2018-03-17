@@ -153,6 +153,12 @@ html, body{
     margin: auto 0em;
     margin-bottom: 20px;
 }
+.hr_about{
+	width: 50px;
+    border: 3px solid #219653;
+    margin: auto 1em;
+    margin-bottom: 20px;
+}
 .hr_quote{
 	width: 50px;
     border: 3px solid #219653;
@@ -179,30 +185,18 @@ html, body{
 .feature_details{
 	display: none;
 }
-.flip{
+.side_2{
+	position: absolute;
+	top: 0;
+    margin-left: -15px;
+	background: #fff;
+	text-align: center;
+	height: 100%;
+	color: #272727;
+	display: none;
+}
 
-	font: normal 14px helvetica, arial, san serif;
-    padding: 10px;
-    position: absolute;
-    
-    transform-origin:             0% 0% 0px;
-        -moz-transform-origin:    50% 50% 0px;
-        -ms-transform-origin:     50% 50% 0px;
-        -o-transform-origin:      50% 50% 0px;
-        -webkit-transform-origin: 50% 50% 0px;
 
-    transition: all 3s;
-        -moz-transition:    all 3s;
-        -ms-transition:     all 3s;
-        -o-transition:      all 3s;
-        -webkit-transition: all 3s;
-    
-     transform:             rotateY( 180deg ) !important;
-        -moz-transform:    rotateY( 180deg ) !important;
-        -ms-transform:     rotateY( 180deg ) !important;
-        -o-transform:      rotateY( 180deg ) !important;
-        -webkit-transform: rotateY( 180deg ) !important;  
-    }
 .testimonial_bg{
 	height: 590px;
 
@@ -216,9 +210,6 @@ html, body{
     url('../Assets/img/testimonial image.png');
     size:cover;
     background-repeat: no-repeat;
-    
-	
-	
 }
 .testimonial_card{
 	width: 100%;
@@ -228,7 +219,6 @@ html, body{
 	margin-top:4em;
 }
 .testimonials {
-  
   position: relative;
   max-height: 300px;
 }
@@ -904,6 +894,54 @@ footer{
 }
 
 @media (max-width:400px){
+	/*homepage*/
+	.form_card-small{
+		width: 230px;
+		height: 390px;
+	}
+	.login_btn_2{
+		width: 180px;
+	}
+	.about{
+		padding-top: 40px !important;
+	}
+	.header p.f-60{
+		font-size: 48px;
+	}
+	.header p.f-24{
+		font-size: 18px;
+	    text-align: center;
+	    padding: 0 28px;
+	}
+	.app_bg{
+		height: 1100px;
+	}
+	.app_content p.f-60{
+		font-size: 48px;
+	}
+	.app_content p.f-24{
+		font-size: 18px;
+	}
+	.btn_playStore {
+		width: 180px;
+    	margin: 0 3em;
+	}
+	.hr_quote{
+		margin: auto 2em;
+	}
+	.testimonials p.f-60{
+		font-size: 48px;
+	}
+	.testimonial_card{
+		margin-top:3em;
+	}
+	.fa-quote-left.f-60{
+		font-size: 48px;
+		display: block;
+	}
+	.message{
+		font-size:16px;
+	}
 	a.nav-link{
 		font-size:22px;
 	}
