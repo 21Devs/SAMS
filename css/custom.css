@@ -706,6 +706,19 @@ footer{
 	}
 }
 @media(min-width: 768px) and (max-width:1024px){
+	/*home page*/
+	.section_content {
+		margin-top: 3rem;
+	}
+	.btn_playStore{
+		width:180px;
+	}
+	.hr_quote{
+		margin: auto 4em;
+	}
+	.testimonials p.f-60{
+		font-size: 48px;
+	}
 	button.btn_subscribe{
 		margin-top: 10px;
 		margin-left:1px;	
@@ -798,6 +811,58 @@ footer{
 }
 
 @media(min-width:410px)and (max-width:575px){
+		/*homepage*/
+	.form_card-small{
+		width: 320px;
+		height: 390px;
+	}
+	.login_btn_2{
+		width: 180px;
+	}
+	.about{
+		padding-top: 40px !important;
+	}
+	.header p.f-60{
+		font-size: 48px;
+		margin-left: 0em;
+	}
+	.header p.f-24{
+		font-size: 18px;
+	    text-align: center;
+	}
+	.app_bg{
+		height: 1200px;
+	}
+	.app_content p.f-60{
+		font-size: 48px;
+	}
+	.app_content p.f-24{
+		font-size: 18px;
+	}
+	.app_store-buttons{
+		margin-top:3rem;
+	}
+	.btn_playStore {
+		width: 180px;
+    	margin: 0 3em;
+	}
+	.hr_quote{
+		margin: auto 2em;
+	}
+	.testimonials p.f-60{
+		font-size: 44px;
+		text-align:left !important;
+	}
+	.testimonial_card{
+		margin-top:3em;
+	}
+	.fa-quote-left.f-60{
+		font-size: 48px;
+		display: block;
+	}
+	.message{
+		font-size:16px;
+	}
 	li.nav-header p{
 		font-size: 30px;
 		padding: 0 15px;
@@ -914,7 +979,7 @@ footer{
 	    padding: 0 28px;
 	}
 	.app_bg{
-		height: 1100px;
+		height: 1200px;
 	}
 	.app_content p.f-60{
 		font-size: 48px;
