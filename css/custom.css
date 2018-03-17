@@ -153,6 +153,12 @@ html, body{
     margin: auto 0em;
     margin-bottom: 20px;
 }
+.hr_quote{
+	width: 50px;
+    border: 3px solid #219653;
+    margin: auto 13em;
+    margin-bottom: 20px;
+}
 .btn_playStore{
 	width:250px;
 	height: 80px;
@@ -170,7 +176,36 @@ html, body{
 	height: 100%;
 	background-repeat: no-repeat;
 }
+.feature_details{
+	display: none;
+}
+.flip{
+
+	font: normal 14px helvetica, arial, san serif;
+    padding: 10px;
+    position: absolute;
+    
+    transform-origin:             0% 0% 0px;
+        -moz-transform-origin:    50% 50% 0px;
+        -ms-transform-origin:     50% 50% 0px;
+        -o-transform-origin:      50% 50% 0px;
+        -webkit-transform-origin: 50% 50% 0px;
+
+    transition: all 3s;
+        -moz-transition:    all 3s;
+        -ms-transition:     all 3s;
+        -o-transition:      all 3s;
+        -webkit-transition: all 3s;
+    
+     transform:             rotateY( 180deg ) !important;
+        -moz-transform:    rotateY( 180deg ) !important;
+        -ms-transform:     rotateY( 180deg ) !important;
+        -o-transform:      rotateY( 180deg ) !important;
+        -webkit-transform: rotateY( 180deg ) !important;  
+    }
 .testimonial_bg{
+	height: 590px;
+
 	background: 
     -webkit-linear-gradient(rgba(11, 45, 64, 0.8), rgba(121, 153, 212, 0.55));
   background: 
@@ -179,77 +214,79 @@ html, body{
     linear-gradient(rgba(58, 53, 53, 0.55), rgba(35, 30, 30, 0.45)),      /* bottom,  */  
     /* bottom, image */
     url('../Assets/img/testimonial image.png');
-    width:100%;
-	height: 780px;
+    size:cover;
+    background-repeat: no-repeat;
+    
+	
 	
 }
 .testimonial_card{
 	width: 100%;
-	height: 632px;
+	height: 432px;
 	background: #FFFFFF;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	margin-top:4em;
 }
-/* Bubble Slider */
-.quotes{
-	width:80%;
-	margin: auto;
-}
-.bubble blockquote {
-	margin:10px 10px 0px 60px;
-	background: #fff;
-	padding: 60px;
-	position: relative;
-	border: none;
-	border-radius: 8px;
-	font-size: 1.25em;
-	color: #696773;
-}
-.bubble blockquote:before, .bubble blockquote:after {
-	content: "\201C";
-	position: absolute;
-	font-size: 120px;
-	padding: 10px;
-	line-height: 1;
-	color: #696773;
-}
-.bubble blockquote:before {
-	top: 0;
-	left: 10px;
-}
-.bubble blockquote:after {
-	content: "\201D";
-	right: 10px;
-	bottom: -.5em;
-}
-.hr_quote{
-	width: 50px;
-    border: 3px solid #219653;
-    margin: auto 13em;
-    margin-bottom: 20px;
-}
-.bubble div {
-	width: 0;
-	height: 0;
-	border-left: 0 solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid #fff;
-	margin: 0 0 0 60px;
-	margin-bottom: 10px;
-}
-.bubble cite {
-	padding-left: 20px;
-	font-size: 1.25em;
-  	color:#f7f7f7;
+.testimonials {
+  
+  position: relative;
+  max-height: 300px;
 }
 
-/*
-.bg  {
-	background: linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%);
-	width:100%;
-	height:100%;
-	position:absolute;
-}*/
+.testimonials {
+  background: #fff;
+}
+.f-right{
+	float: right ;
+}
+.one-slide,
+.testimonial,
+.message {
+  border: none !important;
+  outline: none !important;
+  font-family: 'Fira Sans';
+  font-size: 20px;
+  color: #222222;
+}
+.slick-dots{
+	margin: -1em 0;
+}
+.blockquote-footer{
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #828282;
+}
+
+.icon-overlay {
+  position: absolute;
+  opacity: 0.3;
+  right: 10%;
+  top: 0;
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.carousel-controls .control {
+  position: absolute;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  z-index: 1;
+  background: #fff;
+}
+
+.prev {
+  left: -2.25rem;
+}
+
+.next {
+  right: -2.25rem;
+}
 
 /*Use csae*/
 .usecase_nav{
@@ -280,7 +317,6 @@ html, body{
 .white-text{
 	color: #FFF;
 }
->>>>>>> master
 .banner_img{
 	height: 268px;
 	width:100%;
@@ -660,34 +696,7 @@ ul.price_benefits li{
 	border-radius: 3px;
 	color: #fff;
 }
-/*cusrtom select drop down*/
- /* select with custom icons */
-    .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
-      padding: 0.5em 0 0.5em 4em;
-    }
-    .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
-      height: 50px;
-      width: 50px;
-      top: 1.2em;
-    }
-    .ui-icon.fr {
-      background: url("../Assets/img/flag.png") 0 0 no-repeat;
-    }
-    .ui-icon.can {
-      background: url("../Assets/img/flag.png") 0 0 no-repeat;
-    }
-    .ui-icon.nig {
-      background: url("../Assets/img/flag.png") 0 0 no-repeat;
-    }
-    .ui-selectmenu-button.ui-button{
-    	background: #fafafa;
-    	height: 46px;
-    	padding-top:1em;
-    	width:100%;
-    	border:1px solid #fafafa;
-    	margin-bottom: 3rem;
-    	font-family: 'Fira Sans'
-    }
+
 /*footer*/
 footer{
 	font-family: 'Fira Sans';

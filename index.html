@@ -87,8 +87,9 @@
 	<!-- end header -->
 
 	<!-- start main -->
-	<main>
-		<div class="big_banner" id="video_bg">
+	<div class="main">
+		<div class="wrapper">
+			<div class="big_banner" id="video_bg">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6 mt-5 px-5">
@@ -141,7 +142,9 @@
 				</div>
 			</div>			
 		</div>
-		<section class="about">
+		</div>
+		
+		<div class="about" style="padding-top: 112px">
 			<div class="section_content hide mt-112">
 				<div class="container">
 					<div class="row">
@@ -161,9 +164,9 @@
 				</div>
 				
 			</div>
-		</section>
+		</div>
 
-		<section class="app hide mt-112">
+		<section class="app hide mt-112" >
 			<div class="app_bg">
 				<!-- <img src="Assets/img/app_bg.png" alt=""> -->
 				<div id="overlay"></div>
@@ -171,7 +174,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="mobile_container p-5">
-								<img src="Assets/img/Vector.png" class="" alt=""> 
+								<img src="Assets/img/phone.png" class="" alt=""> 
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -251,7 +254,7 @@
 					</div>
 					<!-- end col-4 -->
 					<div class="col-md-4 col-sm-4 col-xs-12 bd-white banner_bg-color">
-						<div class="pb-3 text-white text-center banner_bg-color">
+						<div class="pb-3 text-white text-center banner_bg-color features_card flip">
 							<div class="icon">
 								<img src="Assets/img/calendar.png"  class="img-fluid" alt="">
 								
@@ -259,7 +262,7 @@
 
 							<div class="card_details px-2">
 								<p class="title f-36">Scheduling </p>
-								<p class="f-14 f-karma">Explore the history of the classic Lorem Ipsum passage and generate your own text using</p>
+								<p class="f-14 f-karma feature_details">Explore the history of the classic Lorem Ipsum passage and generate your own text using</p>
 							</div>
 							
 						</div>
@@ -299,7 +302,7 @@
 					</div>
 					<!-- end col-4 -->
 					<div class="col-md-4 col-sm-4 col-xs-12 bd-white banner_bg-color">
-						<div class="card  text-white text-center banner_bg-color">
+						<div class="text-white text-center banner_bg-color">
 							<div class="icon">
 								<img src="Assets/img/ease.png"  class="img-fluid" alt="">
 							</div>
@@ -322,134 +325,100 @@
 					<div class="col-md-1"></div>
 					<div class="col-md-10">
 						<div class="testimonial_card ">
-							
-							<!-- <div class="row">
+							<div class="row">
 								<div class="col-md-1"></div>
 								<div class="col-md-10">
-									<div class="header mt-112">
+									<div class="header" style="padding-top:80px">
 										<hr class="hr_quote">
-										<p class="text-center f-60 blue_color">Our Happy Clients </p>
 									</div>
-									<section class="quotes">
-								
-									  	<div class="bubble">
-										    <blockquote>
-										    	I refuse to accept the view that mankind is so tragically bound to the starless midnight of racism and war that the bright daybreak of peace and brotherhood can never become a reality... I believe that unarmed truth and unconditional love will have the final word.
-										 	</blockquote>
-									    	<div></div>
-									    	<cite> Martin Luther King, Jr.</cite> 
-									    </div>
-									  	<div class="bubble">
-										    <blockquote> 
-										    	Peace is not a relationship of nations. It is a condition of mind brought about by a serenity of soul. Peace is not merely the absence of war. It is also a state of mind. Lasting peace can come only to peaceful people.
-											</blockquote>
-									    	<div></div>
-									    	<cite> Jawaharlal Nehru</cite> 
-									    </div>
-									  	<div class="bubble">
-										    <blockquote> 
-										    	Forgiveness is not always easy. At times, it feels more painful than the wound we suffered, to forgive the one that inflicted it. And yet, there is no peace without forgiveness.
-											</blockquote>
-										    <div></div>
-										    <cite> Marianne Williamson</cite> 
-										</div>
-									  	<div class="bubble">
-										    <blockquote>
-										    	Of all our dreams today there is none more important - or so hard to realise - than that of peace in the world. May we never lose our faith in it or our resolve to do everything that can be done to convert it one day into reality. 
-										    </blockquote>
-										    <div></div>
-										    <cite> Lester B. Pearson</cite> 
+									<!-- start::testimonial slides -->
+									<section class="testimonials px-1 px-md-5 margin-top-xl">
+										<div class="container">
+											<div class="row">
+												<div class="col-sm-12">
+													<p class="text-center f-60 blue_color">Our Happy Clients </p>
+													<div class="carousel-controls testimonial-carousel-controls">
+														<div class="control d-flex align-items-center justify-content-center prev mt-3">
+															<i class="fa fa-chevron-left text-white"></i>
+														</div>
+														<div class="control d-flex align-items-center justify-content-center next mt-3">
+															<i class="fa fa-chevron-right text-white"></i>
+														</div>
+														<div class="testimonial-carousel">
+															<div class="h5 font-weight-normal one-slide mx-auto">
+																<div class="testimonial w-100 px-3 text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+																	<div class="message  blockquote w-100 text-center">
+																		<i class="fa fa-quote-left f-60 px-3 grey_text"></i>
+																		<span>Their services are really awesome and unique their services are really awesome and uniqueTheir services are really awesome and</span>
+																	</div>
+																	<div class="blockquote-footer w-100 ">
+																		<div class="row">
+																			<div class="col-md-2"></div>
+																			<div class="col-md-2 ">
+																				<img src="Assets/img/client.png" class="f-right" alt="client thumbnail" >
+																			</div>
+																			<div class="col-md-4 f-karma">
+																				<p class="text-left">Dike Thelma Kelechi</p>
+																				<p class="text-left">(Chief Executive Officer B2B)</p>
+																			</div>
+																			<div class="col-md-2"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="h5 font-weight-normal one-slide mx-auto">
+																<div class="testimonial w-100 px-3 text-center  d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+																	<div class="message  blockquote w-100 text-center">
+																		<i class="fa fa-quote-left f-60 px-3 grey_text"></i>
+																		<span>Their services are really awesome and unique their services are really awesome and uniqueTheir services are really awesome and</span>
+																	</div>
+																	<div class="blockquote-footer w-100 ">
+																		<div class="row">
+																			<div class="col-md-2"></div>
+																			<div class="col-md-2 ">
+																				<img src="Assets/img/client.png" class="f-right" alt="client thumbnail" >
+																			</div>
+																			<div class="col-md-4 f-karma">
+																				<p class="text-left">Dike Thelma Kelechi</p>
+																				<p class="text-left">(Chief Executive Officer B2B)</p>
+																			</div>
+																			<div class="col-md-2"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="h5 font-weight-normal one-slide mx-auto">
+																<div class="testimonial w-100 px-3 text-center  d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+																	<div class="message  blockquote w-100 text-center">
+																		<i class="fa fa-quote-left f-60 px-3 grey_text"></i>
+																		<span>Their services are really awesome and unique their services are really awesome and uniqueTheir services are really awesome and</span>
+																	</div>
+																</div>
+																<div class="blockquote-footer w-100 ">
+																	<div class="row">
+																		<div class="col-md-2"></div>
+																		<div class="col-md-2 ">
+																			<img src="Assets/img/client.png" class="f-right" alt="client thumbnail" >
+																		</div>
+																		<div class="col-md-4 f-karma">
+																			<p class="text-left">Dike Thelma Kelechi</p>
+																			<p class="text-left">(Chief Executive Officer B2B)</p>
+																		</div>
+																		<div class="col-md-2"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</section>
+
+									<!-- end::testimonial slides -->
 								</div>
 								<div class="col-md-1"></div>
-							</div>
-							 -->
-							 <!--=====================
-					start testimonial
-				=====================-->
-				<section id="testimonial" class="section-padding">					
-					<div class="container">
-				
-					<!--=== start section-title ===-->
-					    <h2 class="section-header">Testimonials</h2>
-						<div class="margin-bottom"><img src="img/buttom.png" alt="image" /></div>
-						<!-- <p class="section-description">Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli incididunt ut labore Lorem ipsum madolor sit amet.</p> -->
-					<!--=== end section-title ===-->
-					
-						<div class="row">
-							<div class="col-md-8 center-col">
-								
-								<!--=== start testimonial-slider ===-->
-								<div class="testimonial-slider">
-								
-									<!--=== start slider-item ===-->
-									<div class="slider-item">
-										<blockquote>
-											<div class="author-img">
-												<img src="img/testimonial/01.jpg" alt="" />
-											</div>
-											<p>
-												Prime Agrolytics makes miracle. I am a web developer and purchase lorem themes quite often. As always, the last one was great looking and easy to customize to my client's specification.
-											</p>
-											<footer>
-												<cite>Folarin Lawal</cite>
-												<h6>Prime Agrolytics user</h6>
-											</footer>
-										</blockquote>
-									</div>
-									<!--=== start slider-item ===-->
-									
-									<!--=== start slider-item ===-->
-									<div class="slider-item">
-										<blockquote>
-											<div class="author-img">
-												<img src="img/hero/joseph-agunbiade.jpg" alt="" />
-											</div>
-											<p>
-												Prime Agrolytics makes miracle. I am a web developer and purchase lorem themes quite often. As always, the last one was great looking and easy to customize to my client's specification.
-											</p>
-											<footer>
-												<cite>Abdullahi Shehu</cite>
-												<h6>Prime Agrolytics user</h6>
-											</footer>
-										</blockquote>
-									</div>
-									<!--=== end slider-item ===-->
-									
-									<!--=== start slider-item ===-->
-									<div class="slider-item">
-										<blockquote>
-											<div class="author-img">
-												<img src="img/testimonial/03.jpg" alt="" />
-											</div>
-											<p>
-												Prime Agrolytics makes miracle. I am a web developer and purchase lorem themes quite often. As always, the last one was great looking and easy to customize to my client's specification.
-											</p>
-											<footer>
-												<cite>Seun Adegoke</cite>
-												<h6>Prime Agrolytics user</h6>
-											</footer>
-										</blockquote>
-									</div>
-									<!--=== end slider-item ===-->
-									
-								</div>
-								<!--=== end testimonial-slider ===-->
-								
-							</div>
-							<!--=== start col ===-->
-							
-						</div>
-						<!--=== start row ===-->
-						
-					</div>
-					<!--=== start container ===-->
-					
-				</section>
-				<!--=====================
-					end testimonial
-				=====================-->
+							</div>	
 						</div>
 					</div>
 					<div class="col-md-1"></div>
@@ -457,7 +426,7 @@
 				
 			</div>
 		</section>
-	</main>
+	</div>
 	<!-- end main -->
 
 	<!-- start footer -->
@@ -566,42 +535,7 @@
 <script src="Assets/plugins/BigVideo/bower_components/BigVideo/lib/bigvideo.js"></script>
 <script src="Assets/plugins/video.js/video.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script type="text/javascript">
- 	$(function() {
-	    var BV = new $.BigVideo({container: $('#video_bg')});
-
-	    BV.init();
-	    BV.getPlayer().pause();
-
-	    BV.show('video/SAMS_Advert.mp4', {doLoop:true}, {autoplay:true});
-
-	});
-</script>
-<script>
-	
-$('.quotes').slick({
-  dots: true,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 6000,
-  speed: 800,
-  slidesToShow: 1,
-  adaptiveHeight: true
-});
-
-
-/*
-To prevent the flashing of unstyled content (FOUC) I created a class ".no-fouc"
-which hides the slider.  When everything is ready to roll, I simply remove the
-.no-fouc class from the slider section using the script below.  I placed the CSS snippet in the head of the HTML
-page so that it's loaded before other things for obvious reasons.  What about folks with JS turned off?  
-Well, I don't worry about them too much anymore.  Oh my.  I feel the heat from the flames already.  :) 
-*/
-
-$( document ).ready(function() {
-$('.no-fouc').removeClass('no-fouc');
-});
-</script>
+<script src="js/script.js"></script>
 
 </html>
 
