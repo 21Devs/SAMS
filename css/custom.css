@@ -811,7 +811,13 @@ footer{
 }
 
 @media(min-width:410px)and (max-width:575px){
-		/*homepage*/
+	/*homepage*/
+	.mobile_container img{
+		display: none;
+	}
+	.app_content {
+		margin-top:0rem !important;
+	}
 	.form_card-small{
 		width: 320px;
 		height: 390px;
@@ -831,7 +837,7 @@ footer{
 	    text-align: center;
 	}
 	.app_bg{
-		height: 1200px;
+		height: 600px;
 	}
 	.app_content p.f-60{
 		font-size: 48px;
@@ -960,6 +966,9 @@ footer{
 
 @media (max-width:400px){
 	/*homepage*/
+	.mobile_container img{
+		display: none;
+	}
 	.form_card-small{
 		width: 230px;
 		height: 390px;
@@ -979,7 +988,10 @@ footer{
 	    padding: 0 28px;
 	}
 	.app_bg{
-		height: 1200px;
+		height: 600px;
+	}
+	.app_content {
+		margin-top:0rem !important;
 	}
 	.app_content p.f-60{
 		font-size: 48px;
