@@ -410,7 +410,7 @@ p.big_heading{
 	border:none;
 	height: 53px;
 	border-bottom: 3px solid #219653;
-	padding:0 10px;
+	padding:0 20px;
 	font-size:18px;
 	font-family: 'Fira Sans';
 	color: #0B2D40;
@@ -418,6 +418,7 @@ p.big_heading{
 .search_input:focus{
 	border:none;
 	border-bottom: 3px solid #219653;
+	outline: none;
 }
 .search_btn{
 	position: relative;
@@ -511,17 +512,70 @@ ul.price_benefits li{
 	font-size: 18px;
 }
 .accordion_heading{
-	font-size: 32px;
+	font-size: 30px;
 	font-family: 'Fira Sans';
 	line-height: normal;	
 }
 .card-header{
 	height: 90px;
 }
-.fa.fa-plus-square{
+/*.fa.fa-plus-square{
 	font-size: 30px;
 	color:#219653;
+	background-color: green;
+	color: white;
+	border:2px solid green;
+	border-radius: 15%;
+	border-right: 4px solid green;
+	border-left: 4px solid green;
+	border-top: 2px solid green; 
+	border-bottom: 2px solid green; 
 }
+.fa.fa-minus-square{
+	font-size: 30px;
+	color:#219653;
+	background-color: green;
+	color: white;
+	border:2px solid green;
+	border-radius: 15%;
+	border-right: 4px solid green;
+	border-left: 4px solid green;
+	border-top: 2px solid green; 
+	border-bottom: 2px solid green; 
+}*/
+
+.panel-title > .icons:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f056";
+    padding-right: 5px;
+    /*color: green;*/
+    font-size: 40px;
+	color:#219653;
+	/*background-color: green;*/
+	/*color: white;*/
+	width: 40px;
+	/*border:2px solid green;*/
+	border-radius: 100%;
+	margin-top: -40%;
+}
+.panel-title > .icons.collapsed:before {
+    float: right !important;
+    content:"\f0fe";
+    padding-right: 5px;
+    /*color: green;*/
+    font-size: 40px;
+	color:#219653;
+	/*background-color: green;*/
+	/*color: white;*/
+	width: 40px;
+	
+}
+./*panel-title > .icons:hover, 
+.panel-title > .icons:active, 
+.panel-title > .icons:focus  {
+    text-decoration:none;
+}*/
 .card-header{
 	background: #fff;
 	border:none;
