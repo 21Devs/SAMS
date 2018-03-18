@@ -114,6 +114,7 @@ html, body{
 	right: 7%;
 	/* top: -20%; */
 	margin-top: -6%;
+	cursor: pointer;
 
 }
 .hide{
