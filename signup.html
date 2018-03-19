@@ -16,6 +16,7 @@
 
   	<link rel="stylesheet" href="css/header.css">
   	<link rel="stylesheet" href="css/custom.css">
+    
 </head>
 <body class="bg_dark-grey">
 	
@@ -77,18 +78,28 @@
 											<label for="">Phone Number</label>
 											<br>
 											<input type="text" class="form-control h-47 green-caret" required="">
+
 											<div class="form-group mt-4">
 												<label for="Country">Country Code</label>
 												<br>
-												<label for="country"></label>
-												<select class="selectpicker">
-											      	<option value= "nig" data-content="<span><img src='Assets/img/flag.png' style='padding-right:10px;'>Nigeria</span>"></option>
-											      	<option value= "fr" data-content="<span><img src='Assets/img/flag.png'>france</span>"></option>
-											      	<option value= "can" data-content="<span><img src='Assets/img/flag.png'>can</span>"></option>
-											      	<option value= "res" data-content="<span><img src='Assets/img/flag.png'>russia</span>"></option>
+												<div class="dropdown mb-5">
+												  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												    Country Code
+												  </button>
+												  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												    <a class="dropdown-item" href="#"><img src="Assets/img/flag.png" alt="">Nigeria</a>
+												    <a class="dropdown-item" href="#"><img src="Assets/img/flag.png" alt="">France</a>
+												    <a class="dropdown-item" href="#">Something else here</a>
+												  </div>
+												</div>
+												<!-- <select class="selectpicker">
+												      <option value= "relish" data-content="<span><img src='Assets/img/flag.png' style='padding-right:10px;'>Nigeria</span>"></option>
+												      <option value= "fr" data-content="<span><img src='Assets/img/flag.png'>france</span>"></option>
+												      <option value= "can" data-content="<span><img src='Assets/img/flag.png'>can</span>"></option>
+												      <option value= "res" data-content="<span><img src='Assets/img/flag.png'>russia</span>"></option>
 
-											    </select>
-												
+												</select>
+ -->												
 											</div>
 											<div class="form-group">
 												<div class="checkbox">

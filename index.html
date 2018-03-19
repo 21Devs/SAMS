@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="Assets/plugins/BigVideo/bower_components/BigVideo/css/bigvideo.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
 
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="css/header.css">
@@ -105,12 +107,14 @@
 										<label for="Country">Country Code</label>
 										<br>
 										<label for="country"></label>
-										<select name="country" id="country_code">
-											
-											<option value="mypodcast" data-class="fr">France</option>
-							      			<option value="myvideo" data-class="can">Canada</option>
-							      			<option value="myrss" data-class="nig">Nigeria</option>
+										<select class="selectpicker">
+										    <option value= "relish" data-content="<span><img src='Assets/img/flag.png' style='padding-right:10px;'>Nigeria</span>"></option>
+										    <option value= "fr" data-content="<span><img src='Assets/img/flag.png'>france</span>"></option>
+										    <option value= "can" data-content="<span><img src='Assets/img/flag.png'>can</span>"></option>
+										    <option value= "res" data-content="<span><img src='Assets/img/flag.png'>russia</span>"></option>
+
 										</select>
+
 									</div>
 									<div class="form-group mt-4">
 										<div class="checkbox">
@@ -584,12 +588,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="https://vjs.zencdn.net/4.3/video.js"></script>
 
 <!-- BigVideo -->
 <script src="Assets/plugins/BigVideo/bower_components/BigVideo/lib/bigvideo.js"></script>
 <script src="Assets/plugins/video.js/video.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
 <script src="js/script.js"></script>
 
 </html>
