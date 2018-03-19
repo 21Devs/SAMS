@@ -115,7 +115,10 @@ html, body{
 	/* top: -20%; */
 	margin-top: -6%;
 	cursor: pointer;
-
+}
+.hero-form-col{
+	margin-top: 5%;
+	padding: 0 5%;
 }
 .hide{
 	overflow: hidden;
@@ -164,8 +167,9 @@ html, body{
 .hr_about{
 	width: 50px;
     border: 3px solid #219653;
-    margin: auto 1em;
+    margin: auto 3em;
     margin-bottom: 20px;
+    /*text-align: center;*/
 }
 .hr_quote{
 	width: 50px;
@@ -1032,17 +1036,35 @@ footer{
 		display: none;
 	}
 	.form_card-small{
-		width: 230px;
+		width: 100%;
 		height: 390px;
+		padding-top: 1%;
+	}
+	.hero-form-col{
+		margin-top: 5%;
+		padding: 0 5%;
+		width: 100%;
 	}
 	.login_btn_2{
 		width: 180px;
+	}
+	.play{
+		width: 171px;
+		height: 153px;
+		background: #FFFFFF;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+		position: absolute;
+		right: 25%;
+		/* top: -20%; */
+		margin-top: -20%;
+		cursor: pointer;
 	}
 	.about{
 		padding-top: 40px !important;
 	}
 	.header p.f-60{
 		font-size: 48px;
+		text-align: center;
 	}
 	.header p.f-24{
 		font-size: 18px;
@@ -1192,5 +1214,35 @@ footer{
 	.banner_img-1{
 		height: 300px;
 	}
+	.download-text{
+		text-align: justify;
+	}
+	.hr_home{
+		width: 50px;
+	    border: 3px solid #219653;
+	    margin: auto 1em;
+	    margin-bottom: 20px;
+	}
+	.row-diff{
+		margin-top: 100%;
+		margin-bottom: 100%;
+	}
+	.icon{
+		width: 10%;
+	    margin: auto;
+	    padding-top: 2em;
+	    /*padding-bottom: 2em;*/
 
+	}
+	.side_2{
+		position: absolute;
+		top: 0;
+	    margin-left: -15px;
+		background: #fff;
+		text-align: center;
+		height: 100%;
+		color: #272727;
+		display: none;
+		margin-bottom: 20%;
+	}
 }
