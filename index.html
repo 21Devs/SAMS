@@ -25,8 +25,10 @@
 </head>
 <body>
 	
+	<!-- Start:: Header -->
+
 	<!--  header -->
-	<div class="container-fluid mb-0 pb-0">
+	<div class="container-fluid header-1 mb-0 pb-0">
 		<div class="row header-row-1">
 			<div class="col-12 col-md-4 header-col-1 mr-auto">
 				<div class="row header-col-1-row">
@@ -43,13 +45,13 @@
 			</div>
 
 			<div class="col-12 col-md-4 header-col-2 text-right py-2 pr-5">
-				<a href="#">
+				<a href="https://twitter.com/samsnigeria">
 					<i class="fa fa-twitter fa-2x mx-2"></i>
 				</a>
 				<a href="#">
 					<i class="fa fa-google fa-2x mx-2"></i>
 				</a>
-				<a href="#">
+				<a href="https://www.facebook.com/sams.attendance.9">
 					<i class="fa fa-facebook fa-2x mx-2"></i>
 				</a>
 			</div>
@@ -57,36 +59,35 @@
 	</div>
 
 	<!-- header-2 -->
-	<nav class="navbar navbar-expand-lg px-5 py-4">
-		<a class="navbar-brand" href="#">
-			<img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px">
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-			<ul class="mr-auto">
-				
-			</ul>
-			<ul class="navbar-nav  mt-2 mt-lg-0 my-2">
-				<li class="nav-item active">
-					<a class="nav-link text-white mr-4" href="index.html">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-white mr-4" href="anout-us.html">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-white mr-4" href="contact-us.html">Contact</a>
-				</li>
-				<li class="nav-item">
-					<a class="btn nav-link text-white auth-btn bg-success px-5" href="login.html">Log In</a>
-				</li>
-			</ul>
-			<form class="form-inline ">
-			</form>
-		</div>
+	<nav class="navbar navbar-expand-lg main-nav navbar-light py-1">
+	  <a class="navbar-brand" href="#"><img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+		
+	  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+	  	<ul class="mr-auto"> 
+	  		
+	  	</ul>
+	    <ul class="navbar-nav  mt-2 mt-lg-0 my-2">
+	      <li class="nav-item active">
+	        <a class="nav-link text-white mr-4" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link text-white mr-4" href="about-us.html">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link text-white mr-4" href="contact-us.html">Contact</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="btn nav-link text-white auth-btn bg-success px-5" href="login.html">Log In</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline ">
+	    </form>
+	  </div>
 	</nav>
-	<!-- end header -->
+	<!-- End:: Header -->
 
 	<!-- start main -->
 	<div class="main">
@@ -94,15 +95,15 @@
 			<div class="big_banner" id="video_bg">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-12 col-sm-12 col-md-6 mt-5 px-5">
-						<h2 class="text-white f-48">WorkForce Management Solution</h2>
-						<p class="text-white f-18">Let us help you manage your company</p>
+					<div class="col-12 col-sm-12 col-md-12 mt-5 px-5">
+						<h2 class="text-white f-48">WorkForce Management<br> Solution</h2>
+						<p class="text-white f-18" style="opacity:0.5">Let us help you manage your company</p>
 						<div class="form_card-small">
 							<div class="form-group login_form p-60 mt-5">
 								<form action="">
-									<label for="phone-number">Phone Number</label>
-									<br>
-									<input type="text" name="phone-number" class="form-control h-47 green-caret" required="">
+									<!-- <label for="phone-number">Phone Number</label> -->
+									<!-- <br> -->
+									<input type="text" name="phone-number" class="form-control h-47 green-caret" required="required" placeholder="Phone Number">
 									<div class="form-group mt-4">
 										<label for="Country">Country Code</label>
 										<br>
@@ -114,7 +115,6 @@
 										    <option value= "res" data-content="<span><img src='Assets/img/flag.png'>russia</span>"></option>
 
 										</select>
-
 									</div>
 									<div class="form-group mt-4">
 										<div class="checkbox">
@@ -135,19 +135,23 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-12 col-md-6">
-						<div class="play">
-							<button class="btn ">
-				                <img src="Assets/img/play.png" alt="play button">
-				            </button>
-				            <figcaption class="text-center"> watch our story</figcaption>
-						</div>
-					</div>
+					
 				</div>
+
+				
+
 			</div>			
 		</div>
 		</div>
-		
+		<div class="">
+			<div class="play text-center py-4">
+				<!-- <button class=" ">
+					<img src="Assets/img/play.png" alt="play button">
+				</button> -->
+				<i class="fa fa-play-circle fa-3x bg-success text-white text-center py-0 px-1 rounded-circle mb-3" style="font-size: 4em;"></i>
+				<figcaption class="text-center"> Watch Our Story</figcaption>
+			</div>
+		<!-- </div> -->
 		<div class="about" style="padding-top: 112px">
 			<div class="section_content hide mt-112">
 				<div class="container">
@@ -208,37 +212,64 @@
 			</div>
 			
 		</section>
-
+		
 		<section class="features mt-112">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2"></div>
-					<div class="col-md-8">
+					<div class="col-md-3"></div>
+					<div class="col-md-5">
 						<div class="header">
 							<hr class="hr_home">
 							<p class="f-60 blue_color">SAMS Features</p>
 						</div>
 					</div>
-					<div class="col-md-2"></div>
+					<div class="col-md-4"></div>
 				</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-6 col-xs-12 bd-white banner_bg-color card_container">
+
+				
+				<div class="row" style="height:300px">
+					<div class=" col-md-4 col-sm-6 col-xs-12 bd-white banner_bg-color card_container">
 						<div class="pb-3 text-white text-center banner_bg-color side_1">
 							<div class="icon">
-								<img src="Assets/img/calendar.png"  class="img-fluid" alt="">
+								<img src="img/time-white.svg" height="150%" width="150%" class="img-fluid" alt="">
 							</div>
 							<div class="card_details ">
-								<p class="f-36">Time and Attendance</p>
+								<p class="f-30">Time and Attendance</p>
 							</div>
 						</div>
 						<!-- side 2 -->
-						<div class="side_2">
+						<div class=" side_2">
 							<div class="icon">
-								<img src="Assets/img/calendar.png"  class="img-fluid" alt="">
+								<img src="img/time.svg"  class="img-fluid" alt="">
 							</div>
 
 							<div class="card_details px-2">
-								<p class="title f-36 blue_color">Time and Attendance </p>
+								<p class="title f-30 blue_color">Time and Attendance </p>
+								<p class="f-14 f-karma font_color">Explore the history of the classic Lorem Ipsum passage and generate your own text using</p>
+							</div>
+							
+						</div>
+						
+					</div>
+					<!-- end col-4 -->
+					<div class="col-md-4 col-sm-6 col-xs-12 bd-white banner_bg-color card_container">
+						<div class="pb-3 text-white text-center banner_bg-color side_1">
+							<div class="icon" style="width:13%">
+								<img src="img/report-white.svg" class="img-fluid" alt="">
+							</div>
+							<div class="card_details px-2">
+								<p class="f-30 title">Real Time Reporting</p>
+							</div>
+						
+						</div>
+						<!-- side 2 -->
+						<div class="side_2">
+							<div class="icon" style="width:13%">
+								<img src="img/report.svg"  class="img-fluid" alt="">
+							</div>
+
+							<div class="card_details px-2">
+								<p class="title f-30 blue_color">Real Time Reporting </p>
 								<p class="f-14 f-karma font_color">Explore the history of the classic Lorem Ipsum passage and generate your own text using</p>
 							</div>
 							
@@ -249,46 +280,21 @@
 					<div class="col-md-4 col-sm-6 col-xs-12 bd-white banner_bg-color card_container">
 						<div class="pb-3 text-white text-center banner_bg-color side_1">
 							<div class="icon">
-								<img src="Assets/img/Group.png" class="img-fluid" alt="">
+								<img src="img/calender-white.svg"  class="img-fluid" alt="">
 							</div>
 							<div class="card_details px-2">
-								<p class="f-36 title">Real Time Reporting</p>
-							</div>
-						
-						</div>
-						<!-- side 2 -->
-						<div class="side_2">
-							<div class="icon">
-								<img src="Assets/img/calendar.png"  class="img-fluid" alt="">
-							</div>
-
-							<div class="card_details px-2">
-								<p class="title f-36 blue_color">Real Time Reporting </p>
-								<p class="f-14 f-karma font_color">Explore the history of the classic Lorem Ipsum passage and generate your own text using</p>
-							</div>
-							
-						</div>
-						
-					</div>
-					<!-- end col-4 -->
-					<div class="col-md-4 col-sm-6 col-xs-12 bd-white banner_bg-color card_container">
-						<div class="pb-3 text-white text-center banner_bg-color side_1">
-							<div class="icon">
-								<img src="Assets/img/calendar.png"  class="img-fluid" alt="">
-							</div>
-							<div class="card_details px-2">
-								<p class="title f-36">Scheduling </p>
+								<p class="title f-30">Scheduling </p>
 									
 							</div>
 						</div>
 							<!-- side 2 -->
 							<div class="side_2">
 								<div class="icon">
-									<img src="Assets/img/calendar.png"  class="img-fluid" alt="">
+									<img src="img/calender.svg"  class="img-fluid" alt="">
 								</div>
 
 								<div class="card_details px-2">
-									<p class="title f-36 blue_color">Scheduling </p>
+									<p class="title f-30 blue_color">Scheduling </p>
 									<p class="f-14 f-karma font_color">Explore the history of the classic Lorem Ipsum passage and generate your own text using</p>
 								</div>
 								
@@ -299,25 +305,25 @@
 					<!-- end col-4 -->
 				</div>
 
-				<div class="row">
+				<div class="row" style="height:300px">
 					<div class="col-md-4 col-sm-4 col-xs-12 bd-white banner_bg-color card_container">
 						<div class="pb-3 text-white text-center banner_bg-color side_1">
 							<div class="icon">
-								<img src="Assets/img/payroll.png"  class="img-fluid" alt="">
+								<img src="img/payroll-white.svg" height="500px" class="img-fluid" alt="">
 								
 							</div>
 							<div class="card_details px-2">
-								<p class="f-36 title">Payroll Integration</p>
+								<p class="f-30 title">Payroll Integration</p>
 							</div>
 						</div>
 						<!-- side 2 -->
 						<div class="side_2">
 							<div class="icon">
-								<img src="Assets/img/calendar.png"  class="img-fluid" alt="">
+								<img src="img/payroll.svg"  class="img-fluid" alt="">
 							</div>
 
 							<div class="card_details px-2">
-								<p class="title f-36 blue_color">Payroll Integration </p>
+								<p class="title f-30 blue_color">Payroll Integration </p>
 								<p class="f-14 f-karma font_color">Explore the history of the classic Lorem Ipsum passage and generate your own text using</p>
 							</div>
 							
@@ -328,21 +334,21 @@
 					<!-- end col-4 -->
 					<div class="col-md-4 col-sm-4 col-xs-12 bd-white banner_bg-color card_container">
 						<div class="text-white text-center banner_bg-color side_1">
-							<div class="icon">
-								<img src="Assets/img/mobile.png"  class="img-fluid" alt="">
+							<div class="icon"  style="width:27%"> 
+								<img src="img/mobile-white.png"  class="img-fluid" alt="">
 							</div>
 							<div class="card_details px-2">
-								<p class="f-36">Mobile compatibility </p>
+								<p class="f-30">Mobile compatibility </p>
 							</div>
 						</div>
 						<!-- side 2 -->
 						<div class="side_2">
-							<div class="icon">
-								<img src="Assets/img/calendar.png"  class="img-fluid" alt="">
+							<div class="icon"  style="width:26%"> 
+								<img src="img/mobile.png"  class="img-fluid" alt="">
 							</div>
 
 							<div class="card_details px-2">
-								<p class="title f-36 blue_color">Mobile Compatibity </p>
+								<p class="title f-30 blue_color">Mobile Compatibity </p>
 								<p class="f-14 f-karma font_color">Explore the history of the classic Lorem Ipsum passage and generate your own text using</p>
 							</div>
 							
@@ -353,20 +359,20 @@
 					<div class="col-md-4 col-sm-4 col-xs-12 bd-white banner_bg-color card_container">
 						<div class="text-white text-center banner_bg-color side_1">
 							<div class="icon">
-								<img src="Assets/img/ease.png"  class="img-fluid" alt="">
+								<img src="img/ease-white.svg"  class="img-fluid" alt="">
 							</div>
 							<div class="card_details px-2">
-								<p class="f-36">Ease of Use</p>
+								<p class="f-30">Ease of Use</p>
 							</div>
 						</div>
 						<!-- side 2 -->
 						<div class="side_2">
 							<div class="icon">
-								<img src="Assets/img/calendar.png"  class="img-fluid" alt="">
+								<img src="img/ease.svg"  class="img-fluid" alt="">
 							</div>
 
 							<div class="card_details px-2">
-								<p class="title f-36 blue_color">Ease of Use </p>
+								<p class="title f-30 blue_color">Ease of Use </p>
 								<p class="f-14 f-karma font_color">Explore the history of the classic Lorem Ipsum passage and generate your own text using</p>
 							</div>
 							
@@ -378,7 +384,7 @@
 			</div>
 		</section>
 
-		<section class="testimonial mt-112 hide">
+		<section class="testimonial mt-112 hide mb-5">
 			<div class="testimonial_bg">
 				<div class="row">
 					<div class="col-md-1"></div>
@@ -488,10 +494,10 @@
 	</div>
 	<!-- end main -->
 
-	<!-- start footer -->
+	<!-- Start:: Footer -->
 	<footer>
 	
-		<div class="footer-div-1 mt-112">
+		<div class="footer-div-1">
 			<div class="row mx-2 my-0 footer-div-1-row">
 				<div class="col-12 col-sm-6 text-white footer-div-1-col-1">
 					<p class="mb-0 pb-0 subscribe-text-1">Subscribe to our newsletter</p>
@@ -512,25 +518,25 @@
 			</div>
 		</div>
 
-		<div class="footer-div-2  mb-3">
+		<div class="footer-div-2 p-5 mb-3">
 			<div class="row m-2">
 				<div class="col-12 col-md-4 footer-div-2-col-1">
 					<img src="img/logo/sams-logo-sams-color-no-text.svg" class="img-fluid img-responsive" width="100px">
 					<p class="footer-one-liner mt-4">SAMS- Maximizing employees <br> productivity and business <br> productivity</p>
 				</div>
-				<div class="col-6 col-md-2 pt-4 footer-div-2-col-2">
+				<div class="col-6 col-md-2 pt-4">
 					<ul>
 						<header class="sams-blue mb-3 font-weight-bold">Company</header>
 						<a href="#" class="links" style="text-decoration: none;">
 							<li class="mb-2">Home</li>
 						</a>
-						<a href="#" class="links" style="text-decoration: none;">
+						<a href="about-us.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">About</li>
 						</a>
-						<a href="#" class="links" style="text-decoration: none;">
+						<a href="contact-us.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">Contact</li>
 						</a>
-						<a href="#" class="links" style="text-decoration: none;">
+						<a href="signup.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">Sign Up</li>
 						</a>
 					</ul>
@@ -538,10 +544,10 @@
 				<div class="col-6 col-md-2 pt-4">
 					<ul>
 						<header class="sams-blue mb-3 font-weight-bold">Links</header>
-						<a href="#" class="links" style="text-decoration: none;">
+						<a href="pricing.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">Pricing</li>
 						</a>
-						<a href="#" class="links" style="text-decoration: none;">
+						<a href="faq.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">FAQs</li>
 						</a>
 						<a href="#" class="links" style="text-decoration: none;">
@@ -561,20 +567,20 @@
 			</div>
 		</div>
 
-		<div class="footer-div-3 text-white mt-3">
+		<div class="footer-div-3 text-white px-5 py-2 mt-3">
 			<div class="row mx-2 mt-2 mb-0">
 				<div class="col-6 col-md-10 mr-auto">
 					&copy; 2018 SAMS
 				</div>
 
 				<div class="col-6 col-md-2 d-flex">
-					<a href="#">
+					<a href="https://twitter.com/samsnigeria">
 						<i class="fa fa-twitter text-white fa-2x mx-2"></i>
 					</a>
 					<a href="#">
 						<i class="fa fa-google text-white fa-2x mx-2"></i>
 					</a>
-					<a href="#">
+					<a href="https://www.facebook.com/sams.attendance.9">
 						<i class="fa fa-facebook text-white fa-2x mx-2"></i>
 					</a>
 				</div>
@@ -582,7 +588,7 @@
 		</div>
 
 	</footer>
-<!-- end footer -->
+	<!-- End:: Footer -->
 <!--JS, Popper.js, and jQuery  -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
