@@ -19,7 +19,7 @@ $(document).ready(function() {
         BV.init();
         BV.getPlayer().pause();
 
-        BV.show('video/SAMS_Advert.mp4', {doLoop:true}, {autoplay:true});
+        BV.show('../video/SAMS_Advert.mp4', {doLoop:true}, {autoplay:true});
 
     });
     
