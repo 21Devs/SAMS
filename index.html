@@ -96,26 +96,24 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12 col-sm-12 col-md-12 mt-5 px-5">
-						<h2 class="text-white f-48">WorkForce Management<br> Solution</h2>
-						<p class="text-white f-18" style="opacity:0.5">Let us help you manage your company</p>
+						<h2 class="text-white f-48">Intuitive time and<br>attendance tracking app</h2>
+						<p class="text-white f-18" style="opacity:0.5">..effectively monitor absense and productivity on-the-go</p>
 						<div class="form_card-small">
 							<div class="form-group login_form p-60 mt-5">
 								<form action="">
-									<!-- <label for="phone-number">Phone Number</label> -->
-									<!-- <br> -->
-									<input type="text" name="phone-number" class="form-control h-47 green-caret" required="required" placeholder="Phone Number">
 									<div class="form-group mt-4">
-										<label for="Country">Country Code</label>
+										<label for="phone-number">Phone Number</label>
 										<br>
-										<label for="country"></label>
-										<select class="selectpicker">
-										    <option value= "relish" data-content="<span><img src='Assets/img/flag.png' style='padding-right:10px;'>Nigeria</span>"></option>
-										    <option value= "fr" data-content="<span><img src='Assets/img/flag.png'>france</span>"></option>
-										    <option value= "can" data-content="<span><img src='Assets/img/flag.png'>can</span>"></option>
-										    <option value= "res" data-content="<span><img src='Assets/img/flag.png'>russia</span>"></option>
-
+										<input type="text" name="phone-number" class="form-control h-47 green-caret" required="">
+										<label for="Country">Country Code</label>
+										<select class="form-control bg-light border-0 form-control-lg" id="sel1" >
+											<option>France</option>
+											<option>Canada</option>
+											<option>Nigeria</option>
+											<option>Kenya</option>
 										</select>
 									</div>
+									
 									<div class="form-group mt-4">
 										<div class="checkbox">
 											<label class="control control-checkbox green_color">
@@ -143,13 +141,12 @@
 			</div>			
 		</div>
 		</div>
-		<div class="">
-			<div class="play text-center py-4">
-				<!-- <button class=" ">
+		<!-- <div class="d-flex justify-content-end"> -->
+			<div class="play">
+				<button class="btn ">
 					<img src="Assets/img/play.png" alt="play button">
-				</button> -->
-				<i class="fa fa-play-circle fa-3x bg-success text-white text-center py-0 px-1 rounded-circle mb-3" style="font-size: 4em;"></i>
-				<figcaption class="text-center"> Watch Our Story</figcaption>
+				</button>
+				<figcaption class="text-center"> watch our story</figcaption>
 			</div>
 		<!-- </div> -->
 		<div class="about" style="padding-top: 112px">
@@ -161,7 +158,15 @@
 								<hr class="hr_about">
 								<p class="f-60 blue_color">About SAMS</p>
 								<p class="f-24 f-karma grey_text pr-5">
-									The STETiS Attendance Management Solution (SAMS) is an integrated digital tool for managing employees’ work attendance in public, private, small, medium and large scale corporate establishments.
+									SAMS empowers you with realtime
+									insight and seamless mobile access
+									to manage workforce productivity
+									effectively.
+								</p>
+								<p class="grey_text text-muted mt-4" style="font-size:15px">
+									SAMS solution is designed to automatically store your
+									data in the cloud and syncs across your devices,making 
+									it easy to manage workforce on-the-go
 								</p>
 							</div>
 						</div>
@@ -189,18 +194,23 @@
 								<p class="f-60 text-white">
 									Download Our App
 								</p>
-								<p class="f-karma text-white f-24">Sams App in your pocket! Get our app, it's the fastest way to get things done and manage teams</p>
+								<p class="f-karma text-white f-24">Whether you're interested in hiring,
+										managing,tracking and monitoring team 
+										productivity, or synchronizing data across devices, SAMS is built to seamlessly handle
+										that on the go</p>
+
+										<p class="f-karma text-white f-24 mt-4">Syncs data across iOS<sup>TM</sup> and Android<sup>TM</sup>  devices, with more customized functionalities</p>
 							</div>
 							<div class="app_store-buttons mt-112">
 								<div class="row">
 									<div class="col-12 col-sm-6 col-md-6">
 										<a href="https://play.google.com/store/apps/details?id=com.stetis.sams&hl=en" class="btn btn_playStore">
-											<img src="Assets/img/app-icon-android.png" class="img-fluid" alt="">
+											<img src="img/playstore.png" class="img-fluid" alt="">
 										</a>
 									</div>
 									<div class="col-12 col-sm-6 col-md-6">
 										<a href="https://itunes.apple.com/us/app/sams-ng/id1352987922?ls=1&mt=8" class="btn btn_playStore">
-											<img src="Assets/img/app-icon-ios.png" class="img-fluid" alt="">
+											<img src="img/appstore.png" class="img-fluid" alt="">
 										</a>
 									</div>
 								</div>
@@ -305,7 +315,7 @@
 					<!-- end col-4 -->
 				</div>
 
-				<div class="row" style="height:300px">
+				<div class="row row-diff" style="height:290px; ">
 					<div class="col-md-4 col-sm-4 col-xs-12 bd-white banner_bg-color card_container">
 						<div class="pb-3 text-white text-center banner_bg-color side_1">
 							<div class="icon">
@@ -384,7 +394,7 @@
 			</div>
 		</section>
 
-		<section class="testimonial mt-112 hide mb-5">
+		<section class="testimonial mt-112 hide">
 			<div class="testimonial_bg">
 				<div class="row">
 					<div class="col-md-1"></div>
@@ -544,13 +554,13 @@
 				<div class="col-6 col-md-2 pt-4">
 					<ul>
 						<header class="sams-blue mb-3 font-weight-bold">Links</header>
-						<a href="pricing.html" class="links" style="text-decoration: none;">
+						<a href="general.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">Pricing</li>
 						</a>
-						<a href="faq.html" class="links" style="text-decoration: none;">
+						<a href="general.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">FAQs</li>
 						</a>
-						<a href="#" class="links" style="text-decoration: none;">
+						<a href="general.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">Privacy Policy</li>
 						</a>
 					</ul>

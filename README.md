@@ -1,2 +1,2 @@
-# SAMS
-Sams 
+# sams
+Stetis Attendance Management System
