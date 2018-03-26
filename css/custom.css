@@ -82,7 +82,7 @@ html, body{
 	font-size: 36px;
 }
 .f-48{
-	font-size: 48px;
+	font-size: 3em;
 }
 .f-60{
 	font-size: 60px;
@@ -571,19 +571,12 @@ ul.price_benefits li{
     float: right !important;
     content:"\f0fe";
     padding-right: 5px;
-    /*color: green;*/
     font-size: 40px;
 	color:#219653;
-	/*background-color: green;*/
-	/*color: white;*/
 	width: 40px;
 	
 }
-./*panel-title > .icons:hover, 
-.panel-title > .icons:active, 
-.panel-title > .icons:focus  {
-    text-decoration:none;
-}*/
+
 .card-header{
 	background: #fff;
 	border:none;
@@ -959,9 +952,12 @@ footer{
 		border: 1px solid #fff;
 		font-size: 18px;
 	}
-	button.btn_subscribe{
-		font-size: 20px;
-		margin-left:1px;
+	/*faq*/
+	.accordion_heading{
+		font-size: 1.7em;
+	}
+	.panel-title > .icons:before , .panel-title > .icons.collapsed:before {
+		font-size: 1.7em;
 	}
 	.price_card.single, .price_card.last{
 		margin-left: 0;	
@@ -1038,7 +1034,7 @@ footer{
 	.login_btn_2{
 		width: 180px;
 	}
-	.about{
+	.about{1
 		padding-top: 40px !important;
 	}
 	.header p.f-60{
@@ -1110,14 +1106,6 @@ footer{
 	.small_heading{
 		font-size:16px;
 	}
-	.subscribe_input{
-		width: 320px;
-		border:1px solid #fff;
-		margin-bottom: 10px;
-	}
-	button.btn_subscribe{
-		font-size:20px;
-	}
 	.mt-112{
 		margin-top:4.2rem;
 	}
@@ -1127,6 +1115,13 @@ footer{
 	}
 	.accordion_body{
 		font-size:16px;
+	}
+	.panel-title > .icons:before , .panel-title > .icons.collapsed:before {
+		font-size: 1.7em;
+	}
+	.accordion_wrapper{
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
 	}
 	.price_card.single, .price_card.last{
 		margin-left: 0;
