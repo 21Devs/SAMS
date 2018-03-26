@@ -782,18 +782,8 @@ footer{
 	.testimonials p.f-60{
 		font-size: 48px;
 	}
-	button.btn_subscribe{
-		margin-top: 10px;
-		margin-left:1px;	
-	}
-	.subscribe_input{
-		width:320px;
-	}
-	.newsletter{
-		padding-left: 50px;
-		padding-right: 50px;
-		height: 240px;
-	}
+
+	
 	li.nav-header p{
 		font-size: 30px;
 	}
@@ -802,10 +792,7 @@ footer{
 	}
 }
 @media(max-width: 1024px){
-	.subscribe_input{
-		margin-bottom: 10px;
-		border: 1px solid #fff;
-	}
+	
 	.price_card.single{
 		margin-left: 2em;
 	}
@@ -831,6 +818,7 @@ footer{
 
 
 @media(min-width:576px) and (max-width:768px){
+	
 	li.nav-header p{
 		font-size: 30px;
 	}
@@ -842,16 +830,14 @@ footer{
 		padding-right: 50px;
 		height: 300px;
 	}
-	.subscribe_input{
-		width: 320px;
-    	border: 1px solid #fff;
-    	margin-bottom: 10px;
-	}
 	.price_card.single{
 		margin-left: 2em;
 	}
 	.price_card.last{
 		margin-left: -2em;
+	}
+	.play{
+		margin-top:-10%;
 	}
 	.price_header p{
 		font-size: 20px;
@@ -875,6 +861,18 @@ footer{
 
 @media(min-width:410px)and (max-width:575px){
 	/*homepage*/
+	.f-48{
+		font-size: 32px;
+	}
+	.f-18{
+		font-size: 14px;
+	}
+	.f-24{
+		font-size: 16px;
+	}
+	.f-30{
+		font-size: 31px;
+	}
 	.mobile_container img{
 		display: none;
 	}
