@@ -82,7 +82,7 @@ html, body{
 	font-size: 36px;
 }
 .f-48{
-	font-size: 48px;
+	font-size: 3em;
 }
 .f-60{
 	font-size: 60px;
@@ -129,6 +129,9 @@ sup{
 }
 #sell{
 	background-color: #828282;
+}
+.width-50{
+	width:50% !important;
 }
 .play button{
 	background: #fff;
@@ -185,19 +188,17 @@ sup{
 	width:250px;
 	height: 80px;
 }
-.icon{
-	width: 20%;
+ .icon{
+ 	width: 100px;
     margin: auto;
     padding-top: 2em;
     padding-bottom: 2em;
 
+} 
+.icon img{
+	width: 100%;
 }
-.icon-payroll{
-	background-image: url('../Assets/img/laptop.svg');
-	width:50px;
-	height: 100%;
-	background-repeat: no-repeat;
-}
+
 .feature_details{
 	display: none;
 }
@@ -579,19 +580,11 @@ ul.price_benefits li{
     float: right !important;
     content:"\f0fe";
     padding-right: 5px;
-    /*color: green;*/
     font-size: 40px;
 	color:#219653;
-	/*background-color: green;*/
-	/*color: white;*/
 	width: 40px;
 	
 }
-/*panel-title > .icons:hover, 
-.panel-title > .icons:active, 
-.panel-title > .icons:focus  {
-    text-decoration:none;
-}*/
 .card-header{
 	background: #fff;
 	border:none;
@@ -789,18 +782,8 @@ footer{
 	.testimonials p.f-60{
 		font-size: 48px;
 	}
-	button.btn_subscribe{
-		margin-top: 10px;
-		margin-left:1px;	
-	}
-	.subscribe_input{
-		width:320px;
-	}
-	.newsletter{
-		padding-left: 50px;
-		padding-right: 50px;
-		height: 240px;
-	}
+
+	
 	li.nav-header p{
 		font-size: 30px;
 	}
@@ -809,10 +792,7 @@ footer{
 	}
 }
 @media(max-width: 1024px){
-	.subscribe_input{
-		margin-bottom: 10px;
-		border: 1px solid #fff;
-	}
+	
 	.price_card.single{
 		margin-left: 2em;
 	}
@@ -838,6 +818,7 @@ footer{
 
 
 @media(min-width:576px) and (max-width:768px){
+	
 	li.nav-header p{
 		font-size: 30px;
 	}
@@ -849,16 +830,14 @@ footer{
 		padding-right: 50px;
 		height: 300px;
 	}
-	.subscribe_input{
-		width: 320px;
-    	border: 1px solid #fff;
-    	margin-bottom: 10px;
-	}
 	.price_card.single{
 		margin-left: 2em;
 	}
 	.price_card.last{
 		margin-left: -2em;
+	}
+	.play{
+		margin-top:-10%;
 	}
 	.price_header p{
 		font-size: 20px;
@@ -882,6 +861,18 @@ footer{
 
 @media(min-width:410px)and (max-width:575px){
 	/*homepage*/
+	.f-48{
+		font-size: 32px;
+	}
+	.f-18{
+		font-size: 14px;
+	}
+	.f-24{
+		font-size: 16px;
+	}
+	.f-30{
+		font-size: 31px;
+	}
 	.mobile_container img{
 		display: none;
 	}
@@ -913,7 +904,7 @@ footer{
 		font-size: 48px;
 	}
 	.app_content p.f-24{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.app_store-buttons{
 		margin-top:3rem;
@@ -967,9 +958,12 @@ footer{
 		border: 1px solid #fff;
 		font-size: 18px;
 	}
-	button.btn_subscribe{
-		font-size: 20px;
-		margin-left:1px;
+	/*faq*/
+	.accordion_heading{
+		font-size: 1.7em;
+	}
+	.panel-title > .icons:before , .panel-title > .icons.collapsed:before {
+		font-size: 1.7em;
 	}
 	.price_card.single, .price_card.last{
 		margin-left: 0;	
@@ -1035,13 +1029,32 @@ footer{
 }
 
 @media (max-width:400px){
+	.f-48{
+		font-size: 32px;
+	}
+	.f-18{
+		font-size: 14px;
+	}
+	.f-24{
+		font-size: 16px;
+	}
+	.f-30{
+		font-size: 31px;
+	}
+	.px-5{
+		padding-right: 2rem !important;
+		padding-left: 2rem !important;
+	}
+	.login_form {
+		padding-top: 0px !important;
+	}
 	/*homepage*/
 	.mobile_container img{
 		display: none;
 	}
 	.form_card-small{
 		width: 100%;
-		height: 390px;
+		height: 420px;
 		padding-top: 1%;
 	}
 	.hero-form-col{
@@ -1052,6 +1065,7 @@ footer{
 	.login_btn_2{
 		width: 180px;
 	}
+
 	.play{
 		width: 171px;
 		height: 153px;
@@ -1065,6 +1079,7 @@ footer{
 	}
 	.about{
 		padding-top: 40px !important;
+		margin-top:3rem;
 	}
 	.header p.f-60{
 		font-size: 48px;
@@ -1073,26 +1088,39 @@ footer{
 	.header p.f-24{
 		font-size: 18px;
 	    text-align: center;
-	    padding: 0 28px;
+	    padding: 0px;
+	    padding-right: 10px !important;
 	}
 	.app_bg{
 		height: 600px;
 	}
 	.app_content {
 		margin-top:0rem !important;
+		padding-top: 1.4rem;
 	}
 	.app_content p.f-60{
 		font-size: 48px;
 	}
 	.app_content p.f-24{
-		font-size: 18px;
+		font-size: 16px;
 	}
-	.btn_playStore {
-		width: 180px;
-    	margin: 0 3em;
+	.btn_playStore_1, .btn_playStore_2 {
+		width:150px;
+	}
+	.btn_playStore_2 {
+		margin-right: -5px;
+
+	}
+	
+	.card_container{
+		height: 270px;
 	}
 	.hr_quote{
 		margin: auto 2em;
+	}
+	.icon img{
+		width: 100% !important;
+		height: 60px;
 	}
 	.testimonials p.f-60{
 		font-size: 48px;
@@ -1136,14 +1164,6 @@ footer{
 	.small_heading{
 		font-size:16px;
 	}
-	.subscribe_input{
-		width: 320px;
-		border:1px solid #fff;
-		margin-bottom: 10px;
-	}
-	button.btn_subscribe{
-		font-size:20px;
-	}
 	.mt-112{
 		margin-top:4.2rem;
 	}
@@ -1153,6 +1173,13 @@ footer{
 	}
 	.accordion_body{
 		font-size:16px;
+	}
+	.panel-title > .icons:before , .panel-title > .icons.collapsed:before {
+		font-size: 1.7em;
+	}
+	.accordion_wrapper{
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
 	}
 	.price_card.single, .price_card.last{
 		margin-left: 0;
@@ -1248,5 +1275,8 @@ footer{
 		color: #272727;
 		display: none;
 		margin-bottom: 20%;
+	}
+	.mobile_container{
+		padding: 0 !important;
 	}
 }
