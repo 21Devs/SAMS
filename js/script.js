@@ -13,16 +13,15 @@ $(document).ready(function() {
     });
 
     // big video background
-    $(function() {
+   /* $(function() {
         var BV = new $.BigVideo({container: $('#video_bg')});
 
         BV.init();
         BV.getPlayer().pause();
 
-        BV.show('../video/SAMS_Advert.mp4', {doLoop:true}, {autoplay:true});
-
-    });
-    
+        BV.show('../video/SAMS_Advert.mp4', {doLoop:true}, {autoplay:true})
+    });*/
+        
     // features card toggle
     $(".card_container").mouseover(function(){
         $(this).find(".side_2").show ()
