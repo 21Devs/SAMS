@@ -97,7 +97,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-12 mt-5 px-5 " id="video-text">
-							<h2 class="text-white f-48">Intuitive time and<br>attendance tracking app</h2>
+							<h2 class=" f-48">Intuitive time and<br>attendance tracking app</h2>
 							<p class="text-white f-18" style="opacity:0.5">..effectively monitor absense and productivity on-the-go</p>
 							<div class="form_card-small">
 								<div class="form-group login_form p-60 mt-5">
@@ -608,6 +608,7 @@
 
 <script src="Assets/plugins/video.js/video.js"></script>
 <script src="Assets/plugins/BigVideo/bower_components/BigVideo/lib/bigvideo.js"></script>
+<script src="Assets/plugins/BigVideo/bower_components/modernizr/modernizr-2.5.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 
 <script src="js/script.js"></script>
@@ -617,7 +618,12 @@
 
         BV.init();
         //BV.getPlayer().pause();
-        BV.show('video/SAMS_Advert.mp4', {ambient:false}, {autoplay:true});
+        if (Modernizr.touch) {
+			    BV.show('img/poster.jpg');
+			} else {
+			    BV.show('video/SAMS_Advert.mp4', {ambient:false}, {autoplay:true});
+			}
+        
 
     });
 </script>
