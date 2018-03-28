@@ -92,55 +92,51 @@
 	<!-- start main -->
 	<div class="main">
 		<div class="wrapper">
-			<div class="big_banner" id="video_bg">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12 col-sm-12 col-md-12 mt-5 px-5">
-						<h2 class="text-white f-48">Intuitive time and<br>attendance tracking app</h2>
-						<p class="text-white f-18" style="opacity:0.5">..effectively monitor absense and productivity on-the-go</p>
-						<div class="form_card-small">
-							<div class="form-group login_form p-60 mt-5">
-								<form action="">
-									<div class="form-group mt-4">
-										<label for="Country" class="mt-4">Country Code</label>
-										<select class="form-control bg-light border-0 form-control-lg" id="sel1" >
-											<option>France</option>
-											<option>Canada</option>
-											<option>Nigeria</option>
-											<option>Kenya</option>
-										</select>
-										<label for="phone-number">Phone Number</label>
-										<br>
-										<input type="text" name="phone-number" class="form-control h-47 green-caret" required="">
-										
-									</div>
-									
-									<div class="form-group mt-4">
-										<div class="checkbox">
-											<label class="control control-checkbox green_color">
-									            I agree to terms and conditions 
-									            <input type="checkbox" checked="checked" />
-									            <div class="control_indicator"></div>
-									        </label>
+			<div id="video_bg" class=""></div>
+			<div class="big_banner"  >
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 mt-5 px-5 " id="video-text">
+							<h2 class=" f-48">Intuitive time and<br>attendance tracking app</h2>
+							<p class="text-white f-18" style="opacity:0.5">..effectively monitor absense and productivity on-the-go</p>
+							<div class="form_card-small">
+								<div class="form-group login_form p-60 mt-5">
+									<form action="">
+										<div class="form-group mt-4">
+											<label for="Country" class="mt-4">Country Code</label>
+											<select class="form-control bg-light border-0 form-control-lg mb-4" id="sel1" >
+												<option>France</option>
+												<option>Canada</option>
+												<option>Nigeria</option>
+												<option>Kenya</option>
+											</select>
+											<label for="phone-number">Phone Number</label>
+											<br>
+											<input type="text" name="phone-number" class="form-control h-47 green-caret" required="">
 											
 										</div>
-									</div>
 										
-										<div class="buttons text-center mt-5">
-											<button class="btn login_btn_2">Sign Up</button>
+										<div class="form-group mt-4">
+											<div class="checkbox">
+												<label class="control control-checkbox green_color">
+										            I agree to terms and conditions 
+										            <input type="checkbox" checked="checked" />
+										            <div class="control_indicator"></div>
+										        </label>
+												
+											</div>
 										</div>
-										
-								</form>
+											<div class="buttons text-center mt-5">
+												<button class="btn login_btn_2">Sign Up</button>
+											</div>
+									</form>
+								</div>
 							</div>
 						</div>
+						
 					</div>
-					
-				</div>
-
-				
-
-			</div>			
-		</div>
+				</div>			
+			</div>
 		</div>
 		<!-- <div class="d-flex justify-content-end"> -->
 			<div class="play">
@@ -606,17 +602,32 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script src="https://vjs.zencdn.net/4.3/video.js"></script>
+<!-- <script src="https://vjs.zencdn.net/4.3/video.js"></script> -->
 
 <!-- BigVideo -->
-<script src="Assets/plugins/BigVideo/bower_components/BigVideo/lib/bigvideo.js"></script>
+
 <script src="Assets/plugins/video.js/video.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+<script src="Assets/plugins/BigVideo/bower_components/BigVideo/lib/bigvideo.js"></script>
+<script src="Assets/plugins/BigVideo/bower_components/modernizr/modernizr-2.5.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 
 <script src="js/script.js"></script>
+<script type="text/javascript">
+	$(function() {
+        var BV = new $.BigVideo({container: $('#video_bg')});
 
-</html>
+        BV.init();
+        //BV.getPlayer().pause();
+        if (Modernizr.touch) {
+			    BV.show('img/poster.jpg');
+			} else {
+			    BV.show('video/SAMS_Advert.mp4', {ambient:false}, {autoplay:true});
+			}
+        
 
-
+    });
+</script>
 
 </body>
+
+</html>
