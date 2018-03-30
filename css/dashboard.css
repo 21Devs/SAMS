@@ -8,7 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Fira Sans','Karma', sans-serif , serif !important;
-	background-color: #BDBDBD !important;
+	background-color: #FAFAFA !important;
 	/* -webkit-font-smoothing: antialiased;
 	  	-moz-osx-font-smoothing: grayscale; */
 }
@@ -25,6 +25,7 @@ body {
 }
 .bg-linear{
 	background: linear-gradient(180.02deg, #103148 -6.2%, rgba(74, 88, 153, 0.99) 130.46%) !important;
+	height: 700px;
 }
 .f-fira{
 	font-family: 'Fira Sans', sans-serif;
