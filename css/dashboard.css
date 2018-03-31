@@ -23,9 +23,24 @@ body {
 	padding: 10px;
 	font-weight: 700;
 }
+.side-menu-item.active{
+	border-left: 3px solid #fff;
+	z-index: 2;
+    color: #fff;
+    background-color:transparent !important;
+    border-color: none !important;
+    border-left: 3px solid #fff !important;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px transparent, 0 1px 0 transparent;
+}
 .bg-linear{
-	background: linear-gradient(180.02deg, #103148 -6.2%, rgba(74, 88, 153, 0.99) 130.46%) !important;
-	height: 700px;
+	background: linear-gradient(180deg, #0B2D40 -6.2%, rgba(74, 88, 153, 0.99) 115.14%); !important;
+	
+}
+.bg-transparent{
+	background: transparent;
+}
+.list-none{
+	list-style-type: none;
 }
 .f-fira{
 	font-family: 'Fira Sans', sans-serif;
@@ -39,6 +54,9 @@ body {
 .width-60{
 	width:60px;
 }
+.width-110{
+	width:108%;
+}
 .h-37{
 	height: 37px;
 }
@@ -48,21 +66,16 @@ body {
 .h-100{
 	height: 100vh !important;
 }
+.mt-75{
+	margin-top: 75px;
+}
 .plr-5{
 	padding: 0 7px !important;
 }
 .blue-color{
 	color:#4368A5;
 }
-.add_btn{
-	background: #4368A5;
-	height: ;
-	color: #fff;
-	box-shadow: 0px 1px 4px rgba(55, 126, 182, 0.25);
-}
-.add_btn:hover{
-	color: #fff;
-}
+
 .dropdown-toggle::after{
 	color:#4368A5;
 }
@@ -77,14 +90,7 @@ body {
 	width:80px;
 	display: inline;
 }
-.col-md-3#side-nav{
-	flex:0 0 20% !important;
-	max-width: 20% !important;
-}
-.col-md-9#main_content{
-	flex: 0 0 80%;
-	max-width: 80%;
-}
+
 .list-group-item{
 	background: transparent;
 	font-size: 20px;
@@ -107,61 +113,49 @@ img.dashboard{
 .bd-b-dark{
 	border-bottom: 3px solid #0B2D40;
 }
-.header .logo {
-	color: #0b2d40;
+.bd-l-blue{
+	border-left: 3px solid #4368A5;
 }
-.side-nav .logo {
-	background-color: #0b2d40;
-	color: #fff;
+.bd-l-red{
+	border-left:3px solid #EB5757;
 }
-.header .logo {
-	float: left;
+.bd-l-dark{
+	border-left: 3px solid #0B2D40;
 }
-.header .logo {
-	height: 44px;
-	z-index: 1;
-	padding: 10px;
+.bd-l-green{
+	border-left: 3px solid #219653;
+}
+.bd-l-yellow{
+	border-left: 3px solid #FED766;
+}
+.bd-l-light_blue{
+	border-left: 3px solid #2B95C9;
+}
+.bd-l-purple{
+	border-left: 3px solid #9B51E0;
+}
+.fw-700{
 	font-weight: 700;
-	color: #233245;
 }
-.logo  i {
-	font-size: 22px;
+/*admin dashboard*/
+.card-box{
+	width: 173px;
+	padding: 1rem;
+	height: 122px;
 }
-.logo span {
-	margin-left: 5px;
-	text-transform: uppercase;
+.card-box:hover{
+	text-decoration: none;
+	color: #2B95C9;
+	-webkit-transform: translateY(-5px) scale(1.02);
+	transform: translateY(-5px) scale(1.02);
+	-webkit-box-shadow: 0px 5px 12px rgba(126, 142, 177, 0.2);
+		 /*box-shadow: 0px 5px 12px rgba(126, 142, 177, 0.2);*/
+		  box-shadow:0px 1px 4px rgba(0, 0, 0, 0.25);
 }
-.side-navbar{
-	width:257px;
-	border:3px solid #FFF;
-	height: 100%;
+.fc-center{
+	color: #279CCE;
 }
-.nav-trigger {
-	position: relative;
-	float: right;
-	width: 20px;
-	height: 44px;
-	right: 30px;
-	display: block;	
-}
-.nav-trigger span, .nav-trigger span:before, span:after {
-	width: 20px;
-	height: 2px;
-	background-color: #35475e;
-	position: absolute;
-}
-.nav-trigger span {
-	top: 50%;
-}
-.nav-trigger span:before, .nav-trigger span:after {
-	content: '';
-}
-.nav-trigger span:before {
-	top: -6px;
-}
-.nav-trigger span:after {
-	top: 6px;
-}
+
 /* side navigation styles */
 
 @media( min-width:1210px){
@@ -171,14 +165,7 @@ img.dashboard{
 	}
 }
 @media( max-width: 1200px ){
-	.employee_card{
-		margin-bottom: 20px;
-	}
-	.search-input{
-		float: left;
-		width: 140px;
-		margin:0 10px;
-	}
+	
 	.navbar.navbar-expand-lg{
 		width:110%;
 		margin-left: -15px;
@@ -190,15 +177,7 @@ img.dashboard{
 		margin-left: 1em;
 		padding-left: 30px;
 	}
-	#startDate, #endDate, #workTime, #employee{
-		margin:5px 0;
-	}
-	img.dashboard{
-		padding-left: 2em;
-	}
-	.employee_card{
-		margin-bottom: 20px;
-	}
+	
 	.navbar.navbar-expand-lg{
 		width: 100%;
 	    margin-left: 0;
@@ -209,19 +188,8 @@ img.dashboard{
 
 
 @media(max-width: 575px){
-	#startDate, #endDate, #workTime, #employee{
-		margin:5px 0;
-	}
-	.search-input{
-		float: left;
-		width: 180px;
-		margin:0 10px;
-	}
-	.employee_card{
-		margin-bottom: 20px;
-	}
+	
 	.list-group-item{
-		
 		padding-left: 40px;
 	}
 	.col-9-auto{
