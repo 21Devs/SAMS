@@ -70,8 +70,19 @@ if ($("#fullCalendar").length) {
 
 // select table
 
- $(".status_select").click(function(e){
+$(".status_select").click(function(e){
     console.log(e.target.value);
+
+    if( (e.target.value) == 'pending') {
+
+        $(".status_select").addClass('text-danger')
+    }
+    if( (e.target.value) == 'approved') {
+
+        $(".status_select").removeClass('text-danger')
+        
+        $(".status_select").addClass('text-success');
+    }
 })
             
 

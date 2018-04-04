@@ -32,12 +32,13 @@ body {
     border-left: 3px solid #fff !important;
     box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px transparent, 0 1px 0 transparent;
 }
+
 .bg-linear{
 	background: linear-gradient(180deg, #0B2D40 -6.2%, rgba(74, 88, 153, 0.99) 115.14%); !important;
 	
 }
 .bg-transparent{
-	background: transparent;
+	background: transparent !important;
 }
 .list-none{
 	list-style-type: none;
@@ -54,11 +55,29 @@ body {
 .width-60{
 	width:60px;
 }
+.width-80{
+	width:80px;
+}
 .width-110{
 	width:108%;
 }
+.width-120{
+	width:120px;
+}
+.width-30p{
+	width:30%;
+}
+.width-40p{
+	width:40%;
+}
 .h-37{
 	height: 37px;
+}
+.mlr-adj{
+	margin-left: 0px; 
+    margin-right: -15px;
+    padding-left: 7px;
+    padding-right: 0;
 }
 .h-73{
 	height: 73px;
@@ -75,11 +94,18 @@ body {
 .blue-color{
 	color:#4368A5;
 }
-
-.dropdown-toggle::after{
-	color:#4368A5;
+.blue-arrow{
+	color: #4564A2;
 }
-
+.logged-user::after{
+	color:#4368A5 !important;
+}
+.reports::after{
+	color:#FFF;
+}
+.dark_red{
+	color: #B07156;
+}
 .mlr-0{
 	margin-right: 0px;
 	margin-left: -4px;
@@ -91,7 +117,7 @@ body {
 	display: inline;
 }
 
-.list-group-item{
+.side-menu-item{
 	background: transparent;
 	font-size: 20px;
 	padding-top: 20px;
@@ -100,6 +126,9 @@ body {
 }
 img.dashboard{
 	padding-top: 10px 15px !important;
+}
+.bd-light{
+	border:  1px solid #F2F2F2;;
 }
 .bd-b-blue{
 	border-bottom: 3px solid #2B95C9;
@@ -134,14 +163,26 @@ img.dashboard{
 .bd-l-purple{
 	border-left: 3px solid #9B51E0;
 }
+.bd-r-light_blue{
+	border-right: 3px solid #2B95C9;
+}
+.bd-r-green{
+	border-right:3px solid #219653;
+}
+.bd-r-red{
+	border-right: 3px solid #B07156;
+}
 .fw-700{
 	font-weight: 700;
 }
 /*admin dashboard*/
 .card-box{
-	width: 173px;
+	/*width: 173px;*/
 	padding: 1rem;
 	height: 122px;
+}
+.cardBox_wrapper:hover{
+	text-decoration: none;
 }
 .card-box:hover{
 	text-decoration: none;
@@ -155,33 +196,114 @@ img.dashboard{
 .fc-center{
 	color: #279CCE;
 }
+/*Admin employee*/
+.dot{
+	float: left;
+    margin-top: 3px;
+    
+	background: #219653;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid #219653;
+}
+.search-input{
+	width: 100px;
+    display: inline-block;
+    margin-right: 4px;
+}
+.search-btn{
+	width: 40px;
+    height: 40px;
+    background: #fff;
+    border: none;
+    box-shadow:0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+.employee-card-wrapper:hover{
+	text-decoration: none;
+}
+.btn-delete {
+	width: 199px;
+	height: 40px;
+	background: #EB5757;
+	border-radius: 5px;
+}
+.mb-75{
+	margin-bottom: 75px;
+}
+/*settings*/
 
-/* side navigation styles */
+.tab-control:hover{
+	color: #4f4f4f;
+}
+.tab-control.active{
+	border-bottom: 2px solid #2C92C7 !important;
+}
+/* custom checkbox */
+.color-box{
+	width:20px;
+	height: 20px;
+	float: left;
+}
+.control.blue-checkbox input:checked ~ .control_indicator {
+    background: #0B2D40;
+}
+/*modal*/
+input.arrival_time{
+	border-bottom:  1px solid #BDBDBD !important;
+}
 
 @media( min-width:1210px){
-	.navbar.navbar-expand-lg{
+	.wide-navbar{
 		width:113%;
 		margin-left: -15px;
 	}
 }
 @media( max-width: 1200px ){
 	
-	.navbar.navbar-expand-lg{
+	.wide-navbar{
 		width:110%;
 		margin-left: -15px;
 		padding-right: 40px;
 	}
+	.element-wrapper{
+		width:100%;
+		padding: 0 1em;
+	}
+	.card-box{
+		margin-bottom: 1em;
+	}
 }
 @media( max-width: 768px ){
-	.list-group-item{
+	.side-menu-item{
 		margin-left: 1em;
 		padding-left: 30px;
 	}
-	
-	.navbar.navbar-expand-lg{
+	.wide-navbar{
 		width: 100%;
 	    margin-left: 0;
-
+	}
+	.element-wrapper{
+		width:100%;
+		padding: 0 2em;
+	}
+	.card-box{
+		margin-bottom: 1em;
+	}
+	#startDate, #endDate, #location, #employee-select, #worktime{
+		margin-bottom: 20px;
+	}
+	.search-input{
+		width:160px;
+	}
+	.employee-card{
+		margin-bottom: 20px;
+	}
+	.password-settings{
+		padding:0 2em;
+	}
+	.chart{
+		margin-top: 20px;
 	}
 
 }
@@ -189,16 +311,39 @@ img.dashboard{
 
 @media(max-width: 575px){
 	
-	.list-group-item{
+	.side-menu-item{
 		padding-left: 40px;
 	}
-	.col-9-auto{
-		overflow: hidden;
-	}
-	.navbar.navbar-expand-lg{
+	
+	.wide-navbar{
 		width: 100%;
 	    margin-left: 0;
-
+	}
+	.element-wrapper{
+		width:100%;
+		padding: 0 2em;
+	}
+	.card-box{
+		margin-bottom: 1em;
+	}
+	#startDate, #endDate, #location, #employee-select, #worktime{
+		margin-bottom: 20px;
+	}
+	.search-input{
+		width:200px;
+	}
+	.employee-card{
+		margin-bottom: 20px;
+	}
+	.dot{
+	    margin-left: 6em;
+    	margin-bottom: 15px;
+	}
+	.password-settings{
+		padding:0 2em;
+	}
+	.chart{
+		margin-top: 20px;
 	}
 }
 
