@@ -252,6 +252,28 @@ img.dashboard{
 input.arrival_time{
 	border-bottom:  1px solid #BDBDBD !important;
 }
+.ldBar-label {
+    color: red;
+    font-family: tahoma;
+    font-size: 1.5em;
+    font-weight: 900;
+    /*position: relative;*/
+    text-align: center;
+    margin-top: -70%;
+}
+.ldBar-label:after{
+	content:"%";
+	display:inline;
+}
+.btn-deep-blue{
+	background-color: #13334d;
+	color: #fff;
+}
+
+
+
+
+
 
 @media( min-width:1210px){
 	.wide-navbar{
