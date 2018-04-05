@@ -610,7 +610,7 @@
                                         
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <div class="card chart-card" style=" height: 100vh; position: relative;">
+                                        <div class="card chart-card" style=" height: 400px;">
                                             <canvas id="myChart" height="210"></canvas>
                                         </div>
                                     </div>
@@ -740,7 +740,6 @@
         <script>
              new Chart(document.getElementById("myChart"), {
                 type: 'bar',
-                height:220,
                 data: {
                   labels: ["Pres", "Abs", "Oos", "LM", "ED", "TN"],
                   datasets: 
@@ -760,8 +759,7 @@
                     title: {
                         display: true,
                         text: 'March 2018',
-                        responsive: true,
-                        maintainAspectRatio: true
+                        responsive: true
 
                     },
                     scales: {
