@@ -120,8 +120,9 @@
                                             <div class="card">
                                                 <div class="col-md-6">
                                                     <div class="pie">
-                                                        <canvas></canvas>
+                                                        <canvas id="pieChart" height="400" width="200"></canvas>
                                                     </div>
+                                                   
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="pie">
@@ -158,42 +159,28 @@
         
         <script src="js/script.js"></script>
         <script>
-            new Chart(document.getElementById("myChart"), {
-                type: 'bar',
+            new Chart(document.getElementById("pieChart"), {
+                type: 'doughnut',
                 data: {
                   labels: ["Pres", "Abs", "Oos", "LM", "ED", "TN"],
                   datasets: 
                     [
                         {
-                            label: ["Present"],
+                            
                             backgroundColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
                             borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
-                            data: [65, 59, 75, 81, 56, 55, 40]
+                            data: [65]
                         }
                         
                     ]
                 },
-                
-                options: {
-                    legend: { display: false },
-                    title: {
-                        display: true,
-                        text: 'March 2018'
-                    },
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }],
-                       
-                        xAxes: [{
-                            // Change here
-                            barPercentage: 0.2
-                        }]
-                    }
+                option:{
+                    cutoutPercentage: 80
                 }
+                
+               
             });
+           
                         
         </script>
     </body>
