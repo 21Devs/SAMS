@@ -280,6 +280,15 @@ button.close:hover{
 .mt--2e{
 	margin-top: -1.5em;
 }
+.append-btn{
+	border: 1px solid #ced4da;
+    border-left-color: #fff;
+    margin-left: -2px;
+}
+.bd-l-white{
+	border-right-color: #fff;
+}
+
 @media( min-width:1210px){
 	.wide-navbar{
 		width:113%;
