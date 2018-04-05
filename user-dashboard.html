@@ -126,7 +126,7 @@
                     <ul class="list-group list-group-flush rounded-0 px-0">
                       <li class="list-group-item d-flex justify-content-between px-3 py-3 align-items-center rounded-0 card-header">
                         <h4>Attendance</h5>  
-                        <span class="badge bg-transparent badge-pill"><i class="fas fa-ellipsis-h text-primary text-right fa-2x"></i></span>
+                        <span class="badge bg-transparent badge-pill" style="cursor: pointer;" data-toggle="modal" data-target="#editAttendance"><i class="fas fa-ellipsis-h text-primary text-right fa-2x"></i></span>
                       </li>
                       <li class="list-group-item px-3 border-0 text-avg my-0 pb-2">
                         <p class="mb-0 ">Total Number of Days Present</p>
@@ -144,9 +144,9 @@
                   </div>
                   <div class="card rounded-0 card-shdw">
                     <ul class="list-group list-group-flush rounded-0 px-0">
-                      <li class="list-group-item d-flex justify-content-between px-3 py-3 align-items-center rounded-0 card-header-green">
+                      <li class="list-group-item d-flex justify-content-between px-3 py-3 align-items-center rounded-0 card-header-green" >
                         <h4>Out of Station</h5>  
-                        <span class="badge bg-transparent badge-pill"><i class="fas fa-ellipsis-h text-primary text-right fa-2x"></i></span>
+                        <span class="badge bg-transparent badge-pill"  data-toggle="modal" data-target="#editOOS" style="cursor: pointer;"><i class="fas fa-ellipsis-h text-primary text-right fa-2x"></i></span>
                       </li>
                       <li class="list-group-item px-3 border-0 text-avg my-0 pb-2">
                         <p class="mb-0 ">Total Number of Out of Station</p>
@@ -254,7 +254,7 @@
 
           <div class="tab-pane fade" id="list-oos" role="tabpanel" aria-labelledby="list-oos-list">
             
-             <header class="bg-white py-1 pl-2 pr-5">
+            <header class="bg-white py-1 pl-2 pr-5">
                 <div class="row">
                   <div class="col-12 col-md-6 d-flex pt-0">
                     <i class="fas fa-arrow-left blue-color mt-2 pt-1 mr-3"></i>
@@ -389,9 +389,10 @@
                     <div class="p-5">
                       <div class="row p-3">
                         <div class="col-4 col-md-4">
-                          <div class="d-block">
-                            <small>Organization Logo</small>
-                            <img src="..." alt="logo" width="30px">
+                          <div class="d-block ">
+                            <small>Organization Logo</small><br>
+                            <!-- <img src="..." alt="logo" width="30px"> -->
+                            <img src="img/Logo/sams-logo-sams-color-no-text.png" alt="" class="img-fluid ml-5" width="50px">
                           </div>
                           <div>
                             <small>Name of Organization</small>
@@ -438,8 +439,6 @@
                     </div>
                     
                   </div>
-
-                      <!-- Start:: USECAE Content-->
 
                   <div class="tab-pane fade  pt-0 mr-5 " id="nav-case" role="tabpanel" aria-labelledby="nav-case-tab">
                     
@@ -546,7 +545,307 @@
     </div>
   </div>
     
-    
+    <!-- <a href="#">
+        <span class="fa fa-ellipsis-h pull-right blue-color"></span>
+    </a> -->
+    <!-- Modal -->
+    <div class="modal fade" id="editAttendance" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="bb_black f-24">Dike Thelma Kelechi</a> <i class="fa fa-chevron-right f-18"></i>Attendance</h5>
+                    <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive px-4">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td>125 Days Present</td>
+                                            <td>5 Days Absent</td>
+                                            <td colspan="5">08 Late Mark</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Date</td>
+                                            <td>Sign In</td>
+                                            <td>Break On</td>
+                                            <td>Break Out</td>
+                                            <td>Sign Out</td>
+                                            <td>Late Marks</td>
+                                            <td>Other</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12 mt-5">
+                            <nav aria-label="work time report">
+                                <ul class="pagination pull-right">
+                                    <li class="page-item bd_blue">
+                                        <a class="page-link blue_color" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">Previous</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">1</a></li>
+                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">2</a></li>
+                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">3</a></li>
+                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">4</a></li>
+                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">4</a></li>
+                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                                    <li class="page-item bd_blue">
+                                        <a class="page-link blue_color  border-0" href="#" aria-label="Next">
+                                            <span aria-hidden="true">Next</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                       </div>
+                        <div class="col-md-12 mt-75 mb-5">
+                            <div class="table-controls pull-right">
+                                <button class="btn btn-sm banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <a href="#">
+        <span class="fa fa-ellipsis-h pull-right blue-color"></span>
+    </a> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="editOOS" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="bb_black f-24">Leave</a></h5>
+                    <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive px-4">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td class="blue-color">12 Out of Station Days</td>
+                                            <td class="red_color">04 Out of Station Days Taken</td>
+                                            <td colspan="3" class="bb_black">08 Out of Station Available</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Applied Date</td>
+                                            <td>Approved Date</td>
+                                            <td>Reason</td>
+                                            <td>Expected Resume Date</td>
+                                            <td>Date Resumed</td>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="5"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>                                                  Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>Thurs, 7 Jan.,2018</td>
+                                            <td>Maternity Leave</td>
+                                            <td>Fri.,4th Mar.,2018</td>
+                                            <td>Fri.,4th Mar.,2018</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>                                                  Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>Thurs, 7 Jan.,2018</td>
+                                            <td>Maternity Leave</td>
+                                            <td>Fri.,4th Mar.,2018</td>
+                                            <td>Fri.,4th Mar.,2018</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>                                                  Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>Thurs, 7 Jan.,2018</td>
+                                            <td>Maternity Leave</td>
+                                            <td>Fri.,4th Mar.,2018</td>
+                                            <td>Fri.,4th Mar.,2018</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>                                                  Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>Thurs, 7 Jan.,2018</td>
+                                            <td>Maternity Leave</td>
+                                            <td>Fri.,4th Mar.,2018</td>
+                                            <td>Fri.,4th Mar.,2018</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>                                                  Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>Thurs, 7 Jan.,2018</td>
+                                            <td>Maternity Leave</td>
+                                            <td>Fri.,4th Mar.,2018</td>
+                                            <td>Fri.,4th Mar.,2018</td>
+                                            
+                                        </tr>
+                                     
+                                        <tr>
+                                            <td>                                                  Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>Thurs, 7 Jan.,2018</td>
+                                            <td>Maternity Leave</td>
+                                            <td>Fri.,4th Mar.,2018</td>
+                                            <td>Fri.,4th Mar.,2018</td>
+                                            
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12 mt-5">
+                            <nav aria-label="work time report">
+                                <ul class="pagination pull-right">
+                                    <li class="page-item bd_blue">
+                                        <a class="page-link blue_color" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">Previous</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">1</a></li>
+                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">2</a></li>
+                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">3</a></li>
+                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">4</a></li>
+                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">4</a></li>
+                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                                    <li class="page-item bd_blue">
+                                        <a class="page-link blue_color  border-0" href="#" aria-label="Next">
+                                            <span aria-hidden="true">Next</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                       </div>
+                        <div class="col-md-12 mt-75 mb-5">
+                            <div class="table-controls pull-right">
+                                <button class="btn btn-sm banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <!--JS, Popper.js, and jQuery  -->
