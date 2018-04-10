@@ -897,7 +897,18 @@
                 bottom: 0
                       }
                   }
-                  
+           scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }],
+       
+        xAxes: [{
+            // Change here
+            barPercentage: 0.2
+        }]
+      }       
       }
   });
 
