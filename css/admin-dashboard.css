@@ -310,7 +310,7 @@ sup{
 .cardBox_wrapper:focus{
 	outline: none;
 }
-.approval-table{
+.tb-scroll{
 	height: 300px;
 	overflow: scroll;
 }
@@ -338,7 +338,11 @@ sup{
 	background: #fff;
 	border:none !important;
 }
-
+.side-menu-item:active{
+	color: #000!important;
+	outline: none !important;
+	border:none;
+}
 
 
 
