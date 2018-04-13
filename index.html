@@ -22,6 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 </head>
 <body>
 	
@@ -140,20 +141,20 @@
 		</div>
 		<!-- <div class="d-flex justify-content-end"> -->
 			<div class="play">
-				<button class="btn ">
+				<button class="btn  play-btn">
 					<img src="Assets/img/play.png" alt="play button">
 				</button>
 				<figcaption class="text-center"> watch our story</figcaption>
 			</div>
 		<!-- </div> -->
-		<div class="about" style="padding-top: 112px;>
+		<div class="about animated fadeInUp" style="padding-top: 112px; ">
 			<div class="section_content hide mt-112">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="header">
 								<hr class="hr_about">
-								<p class="f-60 blue_color">About SAMS</p>
+								<p class="f-60 blue_color ">About SAMS</p>
 								<p class="f-24 f-karma grey_text pr-5">
 									SAMS empowers you with realtime
 									insight and seamless mobile access
@@ -176,13 +177,13 @@
 			</div>
 		</div>
 
-		<section class="app hide mt-112" >
+		<section class="app hide mt-112 animated fadeInUp" >
 			<div class="app_bg">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="mobile_container p-5">
-								<img src="Assets/img/phone.png" class="img-fluid" alt=""> 
+								<img src="Assets/img/phone.png" class="img-fluid animated infinite bounce" alt=""> 
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -220,7 +221,7 @@
 			
 		</section>
 		
-		<section class="features mt-112">
+		<section class="features mt-112 animated fadeInUp">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3"></div>
@@ -391,7 +392,7 @@
 			</div>
 		</section>
 
-		<section class="testimonial mt-112 hide">
+		<section class="testimonial mt-112 hide animated fadeInUp">
 			<div class="testimonial_bg">
 				<div class="row">
 					<div class="col-md-1"></div>
@@ -606,7 +607,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<!-- <script src="https://vjs.zencdn.net/4.3/video.js"></script> -->
+<script src="https://vjs.zencdn.net/4.3/video.js"></script> 
 
 <!-- BigVideo -->
 
@@ -617,30 +618,37 @@
 <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
 <script src="js/script.js"></script>
 <script type="text/javascript">
-	// $(function() {
- //        var BV = new $.BigVideo({container: $('#video_bg')});
+	
 
- //        BV.init();
- //        //BV.getPlayer().pause();
- //        if (Modernizr.touch) {
-	// 		    BV.show('img/poster.jpg');
-	// 		} else {
-	// 		    BV.show('video/SAMS_Advert.mp4', {ambient:false}, {autoplay:true});
-	// 		}
-        
+    $(document).ready(function(){
+    	$(".btn").click(function () {
+     		body...
+    		$(function() {
+		        var BV = new $.BigVideo({container: $('#video_bg')});
 
- //    });
+		        BV.init();
+		        BV.getPlayer().pause();
+		        if (Modernizr.touch) {
+					    BV.show('img/poster.jpg');
+					} else {
+					    BV.show('video/SAMS_Advert.mp4', {ambient:false}, {autoplay:true});
+					}
+		        
 
- // init controller
- // var controller = new ScrollMagic.Controller();
+		    	});
+    	})
+    });
 
- // // create a scene
- // new ScrollMagic.Scene({
- //         duration: 100,    // the scene should last for a scroll distance of 100px
- //         offset: 50        // start this scene after scrolling for 50px
- //     })
- //     .setPin(".about") // pins the element for the the scene's duration
- //     .addTo(controller); // assign the scene to the controller
+ init controller
+ var controller = new ScrollMagic.Controller();
+
+ // create a scene
+ new ScrollMagic.Scene({
+         duration: 100,    // the scene should last for a scroll distance of 100px
+         offset: 50        // start this scene after scrolling for 50px
+     })
+     .setPin(".about") // pins the element for the the scene's duration
+     .addTo(controller); // assign the scene to the controller
 
 
 
