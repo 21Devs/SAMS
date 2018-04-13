@@ -621,34 +621,31 @@
 	
 
     $(document).ready(function(){
-    	$(".btn").click(function () {
-     		body...
-    		$(function() {
-		        var BV = new $.BigVideo({container: $('#video_bg')});
+    	
+    	$(function() {
+	        var BV = new $.BigVideo({container: $('#video_bg')});
 
-		        BV.init();
-		        BV.getPlayer().pause();
-		        if (Modernizr.touch) {
-					    BV.show('img/poster.jpg');
-					} else {
-					    BV.show('video/SAMS_Advert.mp4', {ambient:false}, {autoplay:true});
-					}
-		        
+	        BV.init();
+	        BV.getPlayer().pause();
 
-		    	});
-    	})
-    });
+	        BV.show('video/SAMS_Advert.mp4', { ambient:false }, { autoplay:true });
+	        
+	        
+	    });
+    })
 
- init controller
- var controller = new ScrollMagic.Controller();
 
- // create a scene
- new ScrollMagic.Scene({
-         duration: 100,    // the scene should last for a scroll distance of 100px
-         offset: 50        // start this scene after scrolling for 50px
-     })
-     .setPin(".about") // pins the element for the the scene's duration
-     .addTo(controller); // assign the scene to the controller
+
+	// init controller
+	// var controller = new ScrollMagic.Controller();
+
+	//  // create a scene
+	// new ScrollMagic.Scene({
+	//         duration: 100,    // the scene should last for a scroll distance of 100px
+	//         offset: 50        // start this scene after scrolling for 50px
+	//     })
+	//     .setPin(".about") // pins the element for the the scene's duration
+	//     .addTo(controller); // assign the scene to the controller
 
 
 
