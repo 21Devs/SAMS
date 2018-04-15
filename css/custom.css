@@ -105,10 +105,10 @@ html, body{
 	font-size:18px;
 }
 .f-24{
-	font-size:24px;
+	font-size:20px;
 }
 .f-30{
-	font-size: 34px;
+	font-size: 24px;
 }
 .f-34{
 	font-size:34px;
@@ -117,10 +117,10 @@ html, body{
 	font-size: 36px;
 }
 .f-48{
-	font-size: 3em;
+	font-size: 2.5em;
 }
 .f-60{
-	font-size: 60px;
+	font-size: 48px;
 }
 .f-karma{
 	font-family: 'Karma'
