@@ -1,4 +1,4 @@
-  
+
 @import url('https://fonts.googleapis.com/css?family=Karma:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,800,900');
 *{
@@ -443,8 +443,9 @@ ul.use_case li{
 	list-style-type: none;
 }
 li.nav-header p{
-	font-size:36px;
+	font-size:32px;
 	font-family: 'Fira Sans';
+	padding-left: 1em;
 }
 .borderless .list-group-item{
 	list-style-type:decimal;
@@ -526,7 +527,7 @@ p.big_heading{
 	height: 608px;
 	border-top: 3px solid #0B2D40;
 	text-align: center;
-	margin-left: -5em;
+	margin-left: -4em;
 }
 .price_header{
 	margin-top:90px;
@@ -537,13 +538,13 @@ p.big_heading{
 	color: #828282;
 }
 .price_benefits{
-	padding-left:7rem;
+	padding-left:6rem;
 	padding-right: 4rem;
 	margin-top: 2.7rem;
 }
 ul.price_benefits li{
 	list-style-type:disc;
-	font-size: 18px;
+	font-size: 16px;
 	color:#828282;
 	padding-bottom: 10px;
 	text-align: left;
@@ -566,7 +567,7 @@ ul.price_benefits li{
 	font-style: normal;
 	font-weight: 300;
 	line-height: normal;
-	font-size: 48px;
+	font-size: 40px;
 	color: #0B2D40;
 }
 /*faq*/
@@ -582,10 +583,10 @@ ul.price_benefits li{
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
-	font-size: 18px;
+	font-size: 16px;
 }
 .accordion_heading{
-	font-size: 30px;
+	font-size: 24px;
 	font-family: 'Fira Sans';
 	line-height: normal;	
 }
@@ -1053,7 +1054,7 @@ footer{
 	}
 	/*faq*/
 	.accordion_heading{
-		font-size: 1.7em;
+		font-size: 1.4em;
 	}
 	.panel-title > .icons:before , .panel-title > .icons.collapsed:before {
 		font-size: 1.7em;
