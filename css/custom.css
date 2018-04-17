@@ -134,7 +134,8 @@ sup{
 	top:-1.5em
 }
 .p-60{
-	padding: 60px;
+	padding: 40px;
+	margin-top: -2rem;
 }
 /*Home page*/
 .form_card-small{
@@ -331,6 +332,23 @@ sup{
 
 .next {
   right: -2.25rem;
+}
+
+.lik{
+	margin-top: 5px;
+}
+
+.lik:hover{
+  color: #FFF;
+  margin-top: 2px;
+}
+
+.lil{
+	padding-top: 5px;
+}
+
+.lil:hover{
+	color: #FFF;
 }
 
 /*Use csae*/
@@ -668,18 +686,23 @@ ul.price_benefits li{
 }
 /*login*/
 .login_container{
-	height: 685px;
+	height: 600px;
+	margin-top: -2rem;
 }
 .big_title{
-	margin-top: 200px;
+	margin-top: 150px;
 	color: #828282;
+}
+
+.why{
+	margin-top:-2rem;
 }
 .form_card{
 	width: 493px;
-	height: 781px;
+	height: 690px;
 	background: #FFFFFF;
 	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
-	margin-top:-5em;
+	margin-top:-3em;
 	padding-top: 84px;
 }
 .hr{
@@ -805,6 +828,7 @@ ul.price_benefits li{
 	background: #219653;
 	border-radius: 3px;
 	color: #fff;
+	padding-top: 14px;
 }
 
 /*footer*/
@@ -974,6 +998,8 @@ footer{
 	.login_btn_2{
 		width: 180px;
 	}
+
+	
 	.about{
 		padding-top: 40px !important;
 	}
@@ -1097,6 +1123,7 @@ footer{
 	}
 	.login_form{
 		padding:20px;
+		
 	}
 	.control {
 		display: block;
